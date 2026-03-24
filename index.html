@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Officina Slice – Pizzeria artigianale. Menu, contatti e molto altro." />
+  <title>Officina Slice</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="assets/logo.png" alt="Officina Slice Logo" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contatti</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">🇮🇹 IT</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-circles">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <img src="assets/logo.png" alt="Officina Slice" class="hero-logo" />
+      <p class="hero-tagline" data-i18n="hero.tagline">Pizza artigianale · Cocktail d'autore</p>
+      <p class="hero-sub" data-i18n="hero.sub">Dove la tradizione incontra il carattere</p>
+      <a href="#menu" class="btn-primary" data-i18n="hero.cta">Scopri il Menu</a>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <div class="section-header">
+      <span class="section-label" data-i18n="menu.label">— Menu —</span>
+      <h2 data-i18n="menu.title">Le Nostre Pizze</h2>
+      <p class="section-desc" data-i18n="menu.desc">Impasto a lievitazione naturale, ingredienti selezionati</p>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="menu-filter">
+      <button class="filter-btn active" data-cat="all" data-i18n="filter.all">Tutte</button>
+      <button class="filter-btn" data-cat="classic" data-i18n="filter.classic">Classiche</button>
+      <button class="filter-btn" data-cat="special" data-i18n="filter.special">Speciali</button>
+      <button class="filter-btn" data-cat="veggie" data-i18n="filter.veggie">Veggie</button>
+      <button class="filter-btn" data-cat="seafood" data-i18n="filter.seafood">Mare</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <span class="section-label" data-i18n="about.label">— Chi siamo —</span>
+        <h2 data-i18n="about.title">L'Officina</h2>
+        <p data-i18n="about.p1">Officina Slice nasce dall'idea che una buona pizza debba essere un'esperienza completa: impasto curato, ingredienti freschi e un'atmosfera unica.</p>
+        <p data-i18n="about.p2">Ogni pizza è un pezzo artigianale, preparata con passione e servita al trancio o intera. Abbinala ai nostri cocktail d'autore per un'esperienza indimenticabile.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">20+</span>
+            <span class="stat-label" data-i18n="about.pizze">Pizze</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label" data-i18n="about.artigianale">Artigianale</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label" data-i18n="about.passione">Passione</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-logo-wrap">
+          <img src="assets/logo.png" alt="Officina Slice" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="section-header">
+      <span class="section-label" data-i18n="contact.label">— Trovaci —</span>
+      <h2 data-i18n="contact.title">Contatti</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <h3 data-i18n="contact.where">Dove siamo</h3>
+        <p>Via della Pizzeria, 1<br/>Milano, Italia</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🕐</div>
+        <h3 data-i18n="contact.hours">Orari</h3>
+        <p data-i18n="contact.hoursval">Mar–Dom: 12:00–15:00<br/>18:00–23:30<br/>Lunedì chiuso</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <h3 data-i18n="contact.phone">Telefono</h3>
+        <p><a href="tel:+39000000000">+39 000 000 0000</a></p>
+      </div>
+      <div class="contact-card qr-card">
+        <div class="contact-icon">📱</div>
+        <h3 data-i18n="contact.qr">QR Menu</h3>
+        <div class="qr-placeholder" id="qrCode"></div>
+        <p class="qr-hint" data-i18n="contact.qrhint">Scansiona per il menu digitale</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="assets/logo.png" alt="Officina Slice" class="footer-logo" />
+    <p>© 2026 Officina Slice · GM & SV</p>
+    <p class="footer-love" data-i18n="footer.love">Fatto con ❤️ e farina</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
