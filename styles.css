@@ -76,10 +76,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 44px;
   width: 44px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
+  
   transition: var(--transition);
 }
-.nav-logo-img:hover { filter: brightness(0) saturate(100%) invert(72%) sepia(45%) saturate(600%) hue-rotate(5deg) brightness(95%); }
+.nav-logo-img:hover {  }
 .nav-links {
   display: flex;
   gap: 8px;
@@ -177,7 +177,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   width: 160px; height: 160px;
   object-fit: contain;
   margin: 0 auto 32px;
-  filter: brightness(0) invert(1);
+  
   animation: fadeDown 1s ease both;
 }
 @keyframes fadeDown {
@@ -471,7 +471,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .about-logo-wrap img {
   width: 200px; height: 200px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
+  
 }
 
 /* ===== CONTACT ===== */
@@ -537,8 +537,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .footer-logo {
   width: 50px; height: 50px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  opacity: 0.4;
+  
+  
   margin: 0 auto 16px;
 }
 .footer p { color: var(--white-dim); font-size: 0.85rem; margin-bottom: 4px; }
