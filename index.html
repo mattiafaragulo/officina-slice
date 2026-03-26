@@ -10,22 +10,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
-<body class="dark-mode">
-
-  <!-- NAVIGATION -->
+<body>
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#home" class="nav-logo">
-        <img src="assets/logo.png" alt="Officina Slice Logo" class="nav-logo-img" />
+        <div class="nav-logo-circle">
+          <img src="assets/logo.png" alt="Officina Slice" />
+        </div>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home" data-i18n="nav.home">Home</a></li>
         <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="#drinks" data-i18n="nav.drinks">Drink</a></li>
         <li><a href="#about" data-i18n="nav.about">About</a></li>
         <li><a href="#contact" data-i18n="nav.contact">Contatti</a></li>
       </ul>
       <div class="nav-actions">
-        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">🇮🇹 IT</button>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">🇬🇧 EN</button>
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
@@ -33,7 +34,6 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-bg">
       <div class="hero-grain"></div>
@@ -44,25 +44,32 @@
       </div>
     </div>
     <div class="hero-content">
-      <img src="assets/logo.png" alt="Officina Slice" class="hero-logo" />
+      <div class="hero-logo-wrap">
+        <img src="assets/logo.png" alt="Officina Slice" class="hero-logo-img" />
+      </div>
       <p class="hero-tagline" data-i18n="hero.tagline">Pizza artigianale · Cocktail d'autore</p>
       <p class="hero-sub" data-i18n="hero.sub">Dove la tradizione incontra il carattere</p>
-      <a href="#menu" class="btn-primary" data-i18n="hero.cta">Scopri il Menu</a>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary" data-i18n="hero.cta">Scopri il Menu</a>
+        <a href="#drinks" class="btn-secondary" data-i18n="hero.cta2">I Nostri Drink</a>
+      </div>
     </div>
-    <div class="scroll-indicator">
-      <span></span>
-    </div>
+    <div class="scroll-indicator"><span></span></div>
   </section>
 
-  <!-- MENU -->
   <section class="menu-section" id="menu">
     <div class="section-header">
       <span class="section-label" data-i18n="menu.label">— Menu —</span>
       <h2 data-i18n="menu.title">Le Nostre Pizze</h2>
       <p class="section-desc" data-i18n="menu.desc">Impasto a lievitazione naturale, ingredienti selezionati</p>
     </div>
-
-    <!-- Category Filter -->
+    <div class="price-legend">
+      <div class="price-legend-item"><span data-i18n="legend.trancio">Trancio</span></div>
+      <div class="price-legend-sep">·</div>
+      <div class="price-legend-item"><span data-i18n="legend.mezza">Mezza Teglia</span></div>
+      <div class="price-legend-sep">·</div>
+      <div class="price-legend-item"><span data-i18n="legend.teglia">Teglia Intera</span></div>
+    </div>
     <div class="menu-filter">
       <button class="filter-btn active" data-cat="all" data-i18n="filter.all">Tutte</button>
       <button class="filter-btn" data-cat="classic" data-i18n="filter.classic">Classiche</button>
@@ -70,13 +77,18 @@
       <button class="filter-btn" data-cat="veggie" data-i18n="filter.veggie">Veggie</button>
       <button class="filter-btn" data-cat="seafood" data-i18n="filter.seafood">Mare</button>
     </div>
-
-    <div class="menu-grid" id="menuGrid">
-      <!-- Populated by JS -->
-    </div>
+    <div class="menu-grid" id="menuGrid"></div>
   </section>
 
-  <!-- ABOUT -->
+  <section class="drinks-section" id="drinks">
+    <div class="section-header">
+      <span class="section-label" data-i18n="drinks.label">— Bar —</span>
+      <h2 data-i18n="drinks.title">Cocktail Classici</h2>
+      <p class="section-desc" data-i18n="drinks.desc">Miscelazione d'autore, ingredienti di qualità</p>
+    </div>
+    <div class="drinks-grid" id="drinksGrid"></div>
+  </section>
+
   <section class="about-section" id="about">
     <div class="about-inner">
       <div class="about-text">
@@ -107,7 +119,6 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section class="contact-section" id="contact">
     <div class="section-header">
       <span class="section-label" data-i18n="contact.label">— Trovaci —</span>
@@ -129,20 +140,14 @@
         <h3 data-i18n="contact.phone">Telefono</h3>
         <p><a href="tel:+39000000000">+39 000 000 0000</a></p>
       </div>
-      <div class="contact-card qr-card">
-        <div class="contact-icon">📱</div>
-        <h3 data-i18n="contact.qr">QR Menu</h3>
-        <div class="qr-placeholder" id="qrCode"></div>
-        <p class="qr-hint" data-i18n="contact.qrhint">Scansiona per il menu digitale</p>
-      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
-    <img src="assets/logo.png" alt="Officina Slice" class="footer-logo" />
-    <p>© 2026 Officina Slice · GM & SV</p>
-    <p class="footer-love" data-i18n="footer.love">Fatto con ❤️ e farina</p>
+    <div class="footer-logo-wrap">
+      <img src="assets/logo.png" alt="Officina Slice" class="footer-logo" />
+    </div>
+    <p>© 2026 Officina Slice · GM</p>
   </footer>
 
   <script src="script.js"></script>
