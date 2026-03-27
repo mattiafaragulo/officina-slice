@@ -8,9 +8,9 @@
   --dark: #111111;
   --dark-card: #181818;
   --dark-border: #2a2a2a;
-  --gold: #7a2232;
-  --gold-light: #9e2d42;
-  --gold-dim: rgba(122, 34, 50, 0.18);
+  --gold: #c9a84c;
+  --gold-light: #e8c96a;
+  --gold-dim: rgba(201, 168, 76, 0.15);
   --white: #f5f0e8;
   --white-dim: rgba(245, 240, 232, 0.6);
   --white-faint: rgba(245, 240, 232, 0.08);
@@ -19,7 +19,7 @@
   --radius: 12px;
   --radius-lg: 20px;
   --shadow: 0 8px 32px rgba(0,0,0,0.5);
-  --shadow-gold: 0 4px 24px rgba(122, 34, 50, 0.35);
+  --shadow-gold: 0 4px 24px rgba(201, 168, 76, 0.2);
   --font-display: 'Playfair Display', serif;
   --font-body: 'Barlow', sans-serif;
   --font-condensed: 'Barlow Condensed', sans-serif;
@@ -232,7 +232,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .btn-primary:hover {
   background: var(--gold-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(122, 34, 50, 0.5);
+  box-shadow: 0 8px 32px rgba(201, 168, 76, 0.4);
 }
 .scroll-indicator {
   position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
@@ -331,13 +331,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: var(--transition);
 }
 .menu-card:hover {
-  border-color: rgba(122, 34, 50, 0.4);
+  border-color: rgba(201, 168, 76, 0.3);
   transform: translateY(-3px);
   box-shadow: var(--shadow-gold);
 }
 .menu-card:hover::before { opacity: 1; }
 .menu-card.special {
-  border-color: rgba(122, 34, 50, 0.25);
+  border-color: rgba(201, 168, 76, 0.25);
   background: linear-gradient(135deg, var(--dark-card), rgba(201, 168, 76, 0.04));
 }
 .menu-card.hidden { display: none; }
@@ -464,7 +464,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   content: '';
   position: absolute; inset: -12px;
   border-radius: 50%;
-  border: 1px dashed rgba(122, 34, 50, 0.3);
+  border: 1px dashed rgba(201, 168, 76, 0.2);
   animation: spin 30s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -496,7 +496,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: var(--transition);
 }
 .contact-card:hover {
-  border-color: rgba(122, 34, 50, 0.4);
+  border-color: rgba(201, 168, 76, 0.3);
   transform: translateY(-3px);
 }
 .contact-icon { font-size: 2rem; margin-bottom: 12px; }
@@ -542,66 +542,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin: 0 auto 16px;
 }
 .footer p { color: var(--white-dim); font-size: 0.85rem; margin-bottom: 4px; }
-.footer-love { color: rgba(122, 34, 50, 0.6) !important; font-style: italic; }
-
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-  .nav-links {
-    position: fixed;
-    top: var(--nav-h); left: 0; right: 0;
-    background: rgba(10, 10, 10, 0.97);
-    backdrop-filter: blur(16px);
-    flex-direction: column;
-    padding: 20px 16px 24px;
-    gap: 4px;
-    border-bottom: 1px solid var(--dark-border);
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
-    transition: var(--transition);
-    margin-left: 0;
-  }
-  .nav-links.open {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .nav-links a {
-    font-size: 1rem;
-    padding: 12px 16px;
-    display: block;
-    border-radius: 8px;
-  }
-  .nav-links a:hover { background: var(--white-faint); }
-  .hamburger { display: flex; }
-  .about-inner { grid-template-columns: 1fr; gap: 40px; }
-  .about-visual { display: none; }
-  .about-stats { gap: 20px; }
-  .menu-grid { grid-template-columns: 1fr; }
-  .section-header { padding: 60px 20px 32px; }
-}
-@media (max-width: 480px) {
-  .contact-grid { grid-template-columns: 1fr 1fr; }
-  .qr-card { grid-column: 1 / -1; }
-}
-
-/* ===== ANIMATIONS / INTERSECTION ===== */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* ===== LOGO CIRCLE (navbar) ===== */
 .nav-logo-circle {
   width: 44px; height: 44px;
   border-radius: 50%;
   overflow: hidden;
-  border: 1.5px solid rgba(122, 34, 50, 0.5);
+  border: 1.5px solid var(--gold);
   background: #000;
   display: flex; align-items: center; justify-content: center;
   transition: var(--transition);
@@ -620,8 +567,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 32px;
-  border: 2px solid rgba(122, 34, 50, 0.6);
-  box-shadow: 0 0 0 8px rgba(122, 34, 50, 0.08), 0 0 40px rgba(122, 34, 50, 0.2);
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 0 8px var(--gold-dim), 0 0 40px rgba(201, 168, 76, 0.2);
   background: #000;
   animation: fadeDown 1s ease both;
 }
@@ -733,7 +680,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   opacity: 0;
   transition: var(--transition);
 }
-.drink-card:hover { border-color: rgba(122, 34, 50, 0.4); transform: translateY(-3px); box-shadow: var(--shadow-gold); }
+.drink-card:hover { border-color: rgba(201, 168, 76, 0.4); transform: translateY(-3px); box-shadow: var(--shadow-gold); }
 .drink-card:hover::before { opacity: 1; }
 .drink-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 .drink-name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; flex: 1; }
