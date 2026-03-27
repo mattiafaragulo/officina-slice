@@ -25,9 +25,8 @@ officina-slice/
 - 📱 Mobile-first responsive design
 - 🌙 Dark mode aesthetic
 - ✨ Smooth scroll animations
-- 📋 QR code placeholder (replace with real QR linking to your site)
 
 ## Customization
-- Update prices and descriptions in `script.js` → `PIZZE` array
+- Update prices and descriptions in `script.js`
 - Update contact info in `index.html` contact section
 - Replace `assets/logo.png` with any updated logo version
