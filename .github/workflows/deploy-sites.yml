@@ -1,0 +1,23 @@
+name: Deploy sites to GitHub Pages
+
+# Pubblica ogni sito in sites/deploy-targets.json sul suo repo-dominio.
+# officina-slice non è mappato: è già servito dalla root di questo repo.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/build.mjs --all
+      - run: node scripts/deploy.mjs
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}

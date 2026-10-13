@@ -1,0 +1,11 @@
+{
+  "_note": "officina-slice e servito dalla root di QUESTO repo (Pages su main), quindi non ha bisogno di deploy. Aggiungi qui gli altri siti come { \"repo\": \"owner/nome-repo\", \"branch\": \"main\" }. Chiavi che iniziano con _ e repo vuoti vengono ignorati.",
+  "demo-nuovo-sito": {
+    "repo": "",
+    "branch": "main"
+  },
+  "officina-smash": {
+    "repo": "mattiafaragulo/officina-smash",
+    "branch": "main"
+  }
+}

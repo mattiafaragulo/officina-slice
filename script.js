@@ -259,12 +259,90 @@ const TRANSLATIONS = {
   }
 };
 
+// ===== SITE CONFIG (multi-sito: stesso layout, contenuti da config.json) =====
+// PIZZE / DRINKS / TRANSLATIONS sopra restano come fallback se config.json manca
+// (es. apertura via file:// o deploy senza config).
+let SITE_CONFIG = null;
+
+async function loadSiteConfig() {
+  const candidates = ['config.json', 'sites/officina-slice/config.json'];
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) { SITE_CONFIG = await res.json(); return; }
+    } catch (e) { /* prova il prossimo candidato */ }
+  }
+  SITE_CONFIG = null;
+}
+
+function getPizze() { return (SITE_CONFIG && SITE_CONFIG.menu) || PIZZE; }
+function getDrinks() { return (SITE_CONFIG && SITE_CONFIG.drinks) || DRINKS; }
+function getStrings(lang) {
+  const base = TRANSLATIONS[lang] || TRANSLATIONS.it;
+  const over = (SITE_CONFIG && SITE_CONFIG.i18n && SITE_CONFIG.i18n[lang]) || {};
+  const merged = Object.assign({}, base, over);
+  if (SITE_CONFIG && SITE_CONFIG.contact && SITE_CONFIG.contact.hoursHtml && SITE_CONFIG.contact.hoursHtml[lang]) {
+    merged['contact.hoursval'] = SITE_CONFIG.contact.hoursHtml[lang];
+  }
+  return merged;
+}
+
+function applySiteConfig() {
+  if (!SITE_CONFIG) return;
+  const name = (SITE_CONFIG.site && SITE_CONFIG.site.name) || document.title;
+  document.title = name;
+  const meta = document.getElementById('metaDescription');
+  if (meta && SITE_CONFIG.site && SITE_CONFIG.site.metaDescription) {
+    const md = SITE_CONFIG.site.metaDescription;
+    meta.setAttribute('content', md[currentLang] || md.it || meta.getAttribute('content'));
+  }
+  if (SITE_CONFIG.order && SITE_CONFIG.order.url) {
+    document.querySelectorAll('[data-order-link]').forEach(a => a.setAttribute('href', SITE_CONFIG.order.url));
+  } else if (SITE_CONFIG.order) {
+    // Sito senza ordini online: nascondi i bottoni invece di linkare il sito sbagliato
+    document.querySelectorAll('[data-order-link]').forEach(a => { a.style.display = 'none'; });
+  }
+  if (SITE_CONFIG.sections && SITE_CONFIG.sections.drinks === false) {
+    const ds = document.getElementById('drinks');
+    if (ds) ds.style.display = 'none';
+    const dl = document.querySelector('.nav-links a[href="#drinks"]');
+    if (dl && dl.closest('li')) dl.closest('li').style.display = 'none';
+  }
+  if (SITE_CONFIG.contact) {
+    const addr = document.getElementById('contactAddress');
+    if (addr && SITE_CONFIG.contact.addressHtml) addr.innerHTML = SITE_CONFIG.contact.addressHtml;
+    const phone = document.getElementById('contactPhoneLink');
+    if (phone) {
+      if (SITE_CONFIG.contact.phoneDisplay) phone.textContent = SITE_CONFIG.contact.phoneDisplay;
+      if (SITE_CONFIG.contact.phoneHref) phone.setAttribute('href', SITE_CONFIG.contact.phoneHref);
+    }
+  }
+  const brand = document.getElementById('footerBrand');
+  if (brand) brand.textContent = '© ' + new Date().getFullYear() + ' ' + name;
+  const theme = SITE_CONFIG.theme;
+  if (theme) {
+    const root = document.documentElement.style;
+    if (theme.gold) root.setProperty('--gold', theme.gold);
+    if (theme.goldLight) root.setProperty('--gold-light', theme.goldLight);
+    if (theme.black) root.setProperty('--black', theme.black);
+    if (theme.dark) root.setProperty('--dark', theme.dark);
+    if (theme.darkCard) root.setProperty('--dark-card', theme.darkCard);
+    if (theme.darkBorder) root.setProperty('--dark-border', theme.darkBorder);
+    if (theme.white) root.setProperty('--white', theme.white);
+  }
+  if (SITE_CONFIG.site && SITE_CONFIG.site.defaultLang) currentLang = SITE_CONFIG.site.defaultLang;
+}
+
 // ===== STATE =====
 let currentLang = 'it';
 let currentFilter = 'all';
 
 // ===== INIT =====
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadSiteConfig();
+  applySiteConfig();
+  applyTranslations();
+  renderLegend();
   renderMenu();
   renderDrinks();
   setupNav();
@@ -273,12 +351,32 @@ document.addEventListener('DOMContentLoaded', () => {
   setupScrollReveal();
 });
 
+// Una voce può avere prezzi liberi [{label, labelEN, value}] oppure, in
+// retrocompatibilità col formato pizzeria, trancio/mezza/teglia.
+function renderPrices(p, t) {
+  if (p.prices && p.prices.length) {
+    return p.prices.map(x =>
+      `<div class="price-pill">` +
+      `<span class="price-pill-label">${currentLang === 'en' ? (x.labelEN || x.label) : x.label}</span>` +
+      `<span class="price-pill-val">${x.value}</span></div>`
+    ).join('');
+  }
+  return (
+    `<div class="price-pill"><span class="price-pill-label">${t.trancio}</span>` +
+    `<span class="price-pill-val">${p.trancio}</span></div>` +
+    `<div class="price-pill"><span class="price-pill-label">${t.mezza}</span>` +
+    `<span class="price-pill-val">${p.mezza}</span></div>` +
+    `<div class="price-pill"><span class="price-pill-label">${t.teglia}</span>` +
+    `<span class="price-pill-val">${p.teglia}</span></div>`
+  );
+}
 // ===== RENDER MENU =====
 function renderMenu() {
   const grid = document.getElementById('menuGrid');
   grid.innerHTML = '';
-  const t = TRANSLATIONS[currentLang];
-  const items = currentFilter === 'all' ? PIZZE : PIZZE.filter(p => p.cat === currentFilter);
+  const t = getStrings(currentLang);
+  const all = getPizze();
+  const items = currentFilter === 'all' ? all : all.filter(p => p.cat === currentFilter);
   items.forEach((p, i) => {
     const card = document.createElement('div');
     card.className = 'menu-card reveal' + (p.special ? ' special' : '');
@@ -297,18 +395,7 @@ function renderMenu() {
       </div>
       <p class="card-desc">${desc}</p>
       <div class="card-prices">
-        <div class="price-pill">
-          <span class="price-pill-label">${t.trancio}</span>
-          <span class="price-pill-val">${p.trancio}</span>
-        </div>
-        <div class="price-pill">
-          <span class="price-pill-label">${t.mezza}</span>
-          <span class="price-pill-val">${p.mezza}</span>
-        </div>
-        <div class="price-pill">
-          <span class="price-pill-label">${t.teglia}</span>
-          <span class="price-pill-val">${p.teglia}</span>
-        </div>
+        ${renderPrices(p, t)}
       </div>
       ${badges ? `<div class="card-badges">${badges}</div>` : ''}
     `;
@@ -321,7 +408,7 @@ function renderMenu() {
 function renderDrinks() {
   const grid = document.getElementById('drinksGrid');
   grid.innerHTML = '';
-  DRINKS.forEach((d, i) => {
+  getDrinks().forEach((d, i) => {
     const card = document.createElement('div');
     card.className = 'drink-card reveal';
     card.style.animationDelay = (i * 0.04) + 's';
@@ -338,7 +425,34 @@ function renderDrinks() {
 }
 
 // ===== FILTER =====
+// Se config.filters è presente, i bottoni filtro sono guidati dal sito
+// (stesso stile, categorie diverse); altrimenti restano quelli statici in HTML.
+function renderFilters() {
+  const wrap = document.querySelector('.menu-filter');
+  if (!wrap || !SITE_CONFIG || !SITE_CONFIG.filters) return false;
+  const filters = SITE_CONFIG.filters;
+  if (currentFilter && !filters.some(f => f.id === currentFilter)) {
+    currentFilter = filters.length ? filters[0].id : 'all';
+  }
+  wrap.innerHTML = '';
+  filters.forEach(f => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn' + (f.id === currentFilter ? ' active' : '');
+    btn.dataset.cat = f.id;
+    btn.textContent = f[currentLang] || f.it || f.id;
+    btn.addEventListener('click', () => {
+      wrap.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.cat;
+      renderMenu();
+    });
+    wrap.appendChild(btn);
+  });
+  return true;
+}
+
 function setupFilter() {
+  if (renderFilters()) return;
   document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -347,6 +461,20 @@ function setupFilter() {
       renderMenu();
     });
   });
+}
+
+// Legenda prezzi: se config.menuLegend è assente resta l'HTML statico,
+// se è un array viene renderizzata, se è null/false viene nascosta.
+function renderLegend() {
+  const legend = document.querySelector('.price-legend');
+  if (!legend || !SITE_CONFIG || SITE_CONFIG.menuLegend === undefined) return;
+  const cfg = SITE_CONFIG.menuLegend;
+  if (!cfg) { legend.style.display = 'none'; return; }
+  const items = cfg[currentLang] || cfg.it || [];
+  legend.style.display = '';
+  legend.innerHTML = items.map(s =>
+    `<div class="price-legend-item"><span>${s}</span></div>`
+  ).join('<div class="price-legend-sep">·</div>');
 }
 
 // ===== NAVBAR =====
@@ -376,7 +504,7 @@ function updateActiveNav() {
   let active = 'home';
   sections.forEach(id => {
     const el = document.getElementById(id);
-    if (el && el.offsetTop <= scrollY) active = id;
+    if (el && el.offsetTop <= scrollY && el.style.display !== 'none') active = id;
   });
   document.querySelectorAll('.nav-links a').forEach(a => {
     a.classList.toggle('active', a.getAttribute('href') === '#' + active);
@@ -388,18 +516,28 @@ function setupLangToggle() {
   document.getElementById('langToggle').addEventListener('click', () => {
     currentLang = currentLang === 'it' ? 'en' : 'it';
     applyTranslations();
+    renderFilters();
+    renderLegend();
     renderMenu();
     renderDrinks();
   });
 }
 
 function applyTranslations() {
-  const t = TRANSLATIONS[currentLang];
+  const t = getStrings(currentLang);
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
-    if (t[key] !== undefined) el.textContent = t[key];
+    if (t[key] === undefined) return;
+    // innerHTML solo per le stringhe che contengono markup (es. orari con <br/>)
+    if (t[key].indexOf('<') !== -1) el.innerHTML = t[key];
+    else el.textContent = t[key];
   });
   document.getElementById('langToggle').textContent = t['lang.btn'];
+  const meta = document.getElementById('metaDescription');
+  if (meta && SITE_CONFIG && SITE_CONFIG.site && SITE_CONFIG.site.metaDescription) {
+    const md = SITE_CONFIG.site.metaDescription;
+    meta.setAttribute('content', md[currentLang] || md.it || meta.getAttribute('content'));
+  }
 }
 
 // ===== SCROLL REVEAL =====

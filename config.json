@@ -1,0 +1,531 @@
+{
+  "site": {
+    "id": "officina-slice",
+    "name": "Officina Slice",
+    "metaDescription": {
+      "it": "Officina Slice – Pizzeria artigianale. Menu, contatti e molto altro.",
+      "en": "Officina Slice – Artisan pizzeria. Menu, contacts and more."
+    },
+    "defaultLang": "it"
+  },
+  "branding": {
+    "logo": "assets/logo.png"
+  },
+  "theme": {
+    "gold": "#c9a84c",
+    "goldLight": "#e8c96a",
+    "black": "#0a0a0a",
+    "dark": "#111111",
+    "darkCard": "#181818",
+    "darkBorder": "#2a2a2a",
+    "white": "#f5f0e8"
+  },
+  "order": {
+    "url": "https://eef46ed069e34436-q3pg2802.rchsmartorder.com/listing"
+  },
+  "contact": {
+    "addressHtml": "Via A.Volta, 82/84<br/>Rende (CS)",
+    "phoneDisplay": "0984 401901",
+    "phoneHref": "tel:0984401901",
+    "hoursHtml": {
+      "it": "Lun-Sab: 10:30–15:00 / 17:30–00:30<br/>Domenica: 17:00–23:00<br><br>Chiuso: Domenica Mattina",
+      "en": "Mon-Sun: 10:30–15:00 / 17:30–00:30<br/>Sunday: 17:00–23:00<br><br>Closed: Sunday Morning"
+    }
+  },
+  "footer": {
+    "credit": "Website created and designed by Mattia Faragulo - mattiafaragulo@libero.it"
+  },
+  "i18n": {
+    "it": {
+      "nav.home": "Home",
+      "nav.menu": "Menu",
+      "nav.drinks": "Drink",
+      "nav.about": "About",
+      "nav.contact": "Contatti",
+      "hero.tagline": "Pizza artigianale · Cocktail d'autore",
+      "hero.sub": "Dove la tradizione incontra il carattere",
+      "hero.cta": "Scopri il Menu",
+      "hero.cta2": "I Nostri Drink",
+      "menu.label": "— Menu —",
+      "menu.title": "Le Nostre Pizze",
+      "menu.desc": "Impasto a lievitazione naturale, ingredienti selezionati",
+      "legend.trancio": "Trancio",
+      "legend.mezza": "Mezza Teglia",
+      "legend.teglia": "Teglia Intera",
+      "filter.all": "Tutte",
+      "filter.classic": "Classiche",
+      "filter.special": "Speciali",
+      "filter.veggie": "Veggie",
+      "filter.seafood": "Mare",
+      "drinks.label": "— Bar —",
+      "drinks.title": "Cocktail Classici",
+      "drinks.desc": "Miscelazione d'autore, ingredienti di qualità",
+      "about.label": "— Chi siamo —",
+      "about.title": "L'Officina",
+      "about.p1": "Officina Slice nasce dall'idea che una buona pizza debba essere un'esperienza completa: impasto curato, ingredienti freschi e un'atmosfera unica.",
+      "about.p2": "Ogni pizza è un pezzo artigianale, preparata con passione e servita al trancio o intera. Abbinala ai nostri cocktail d'autore per un'esperienza indimenticabile.",
+      "about.pizze": "Pizze",
+      "about.artigianale": "Artigianale",
+      "about.passione": "Passione",
+      "contact.label": "— Trovaci —",
+      "contact.title": "Contatti",
+      "contact.where": "Dove siamo",
+      "contact.hours": "Orari",
+      "contact.hoursval": "Lun-Sab: 10:30–15:00 / 17:30–00:30<br/>Domenica: 17:00–23:00<br><br>Chiuso: Domenica Mattina",
+      "contact.phone": "Telefono",
+      "footer.love": "Fatto con ❤️ e farina",
+      "lang.btn": "🇬🇧 EN",
+      "trancio": "Trancio",
+      "mezza": "Mezza",
+      "teglia": "Teglia"
+    },
+    "en": {
+      "nav.home": "Home",
+      "nav.menu": "Menu",
+      "nav.drinks": "Drinks",
+      "nav.about": "About",
+      "nav.contact": "Contact",
+      "hero.tagline": "Artisan Pizza · Signature Cocktails",
+      "hero.sub": "Where tradition meets character",
+      "hero.cta": "Explore the Menu",
+      "hero.cta2": "Our Drinks",
+      "menu.label": "— Menu —",
+      "menu.title": "Our Pizzas",
+      "menu.desc": "Natural leavening dough, selected ingredients",
+      "legend.trancio": "By the Slice",
+      "legend.mezza": "Half Tray",
+      "legend.teglia": "Full Tray",
+      "filter.all": "All",
+      "filter.classic": "Classics",
+      "filter.special": "Specials",
+      "filter.veggie": "Veggie",
+      "filter.seafood": "Seafood",
+      "drinks.label": "— Bar —",
+      "drinks.title": "Classic Cocktails",
+      "drinks.desc": "Expert mixology, quality ingredients",
+      "about.label": "— About us —",
+      "about.title": "The Workshop",
+      "about.p1": "Officina Slice was born from the idea that a great pizza should be a complete experience: carefully crafted dough, fresh ingredients, and a unique atmosphere.",
+      "about.p2": "Every pizza is handcrafted with passion and served by the slice or whole. Pair it with our signature cocktails for an unforgettable evening.",
+      "about.pizze": "Pizzas",
+      "about.artigianale": "Artisanal",
+      "about.passione": "Passion",
+      "contact.label": "— Find us —",
+      "contact.title": "Contact",
+      "contact.where": "Where we are",
+      "contact.hours": "Hours",
+      "contact.hoursval": "Mon-Sun: 10:30–15:00 / 17:30–00:30<br/>Sunday: 17:00–23:00<br><br>Closed: Sunday Morning",
+      "contact.phone": "Phone",
+      "footer.love": "Made with ❤️ and flour",
+      "lang.btn": "🇮🇹 IT",
+      "trancio": "Slice",
+      "mezza": "Half",
+      "teglia": "Full"
+    }
+  },
+  "menu": [
+    {
+      "num": 1,
+      "name": "Margherita",
+      "nameEN": "Margherita",
+      "desc": "Pomodoro e mozzarella",
+      "descEN": "Tomato and mozzarella",
+      "trancio": "€1,50",
+      "mezza": "€9,00",
+      "teglia": "€15,00",
+      "cat": "classic"
+    },
+    {
+      "num": 2,
+      "name": "Salame",
+      "nameEN": "Salami",
+      "desc": "Pomodoro, mozzarella, salame dolce",
+      "descEN": "Tomato, mozzarella, sweet salami",
+      "trancio": "€2,00",
+      "mezza": "€11,50",
+      "teglia": "€18,00",
+      "cat": "classic"
+    },
+    {
+      "num": 3,
+      "name": "Patate & Rosmarino",
+      "nameEN": "Potato & Rosemary",
+      "desc": "Patate e rosmarino",
+      "descEN": "Potatoes and rosemary",
+      "trancio": "€1,50",
+      "mezza": "€9,00",
+      "teglia": "€15,00",
+      "cat": "veggie"
+    },
+    {
+      "num": 4,
+      "name": "Capricciosa",
+      "nameEN": "Capricciosa",
+      "desc": "Pomodoro, carciofi, funghi champignon, mozzarella, prosciutto cotto, olive nere",
+      "descEN": "Tomato, artichokes, mushrooms, mozzarella, cooked ham, black olives",
+      "trancio": "€2,00",
+      "mezza": "€11,50",
+      "teglia": "€20,00",
+      "cat": "classic",
+      "special": true
+    },
+    {
+      "num": 5,
+      "name": "Halloween",
+      "nameEN": "Halloween",
+      "desc": "Crema di zucca, guanciale, mozzarella, provola affumicata",
+      "descEN": "Pumpkin cream, guanciale, mozzarella, smoked cheese",
+      "trancio": "€2,00",
+      "mezza": "€11,50",
+      "teglia": "€20,00",
+      "cat": "special",
+      "special": true
+    },
+    {
+      "num": 6,
+      "name": "Delizie di Bosco",
+      "nameEN": "Forest Delight",
+      "desc": "Funghi champignon, mozzarella, speck, crema ai 4 formaggi",
+      "descEN": "Mushrooms, mozzarella, speck, four-cheese cream",
+      "trancio": "€2,00",
+      "mezza": "€11,50",
+      "teglia": "€20,00",
+      "cat": "special"
+    },
+    {
+      "num": 7,
+      "name": "Gricia",
+      "nameEN": "Gricia",
+      "desc": "Crema di pecorino, guanciale, mozzarella, pepe nero, pecorino",
+      "descEN": "Pecorino cream, guanciale, mozzarella, black pepper, pecorino",
+      "trancio": "€2,00",
+      "mezza": "€11,50",
+      "teglia": "€20,00",
+      "cat": "special",
+      "special": true
+    },
+    {
+      "num": 8,
+      "name": "Bufalina",
+      "nameEN": "Bufalina",
+      "desc": "Datterino in salsa, burrata, basilico",
+      "descEN": "Cherry tomato sauce, burrata, basil",
+      "trancio": "€2,00",
+      "mezza": "€11,50",
+      "teglia": "€20,00",
+      "cat": "special",
+      "special": true
+    },
+    {
+      "num": 9,
+      "name": "Parmigiana Scomposta",
+      "nameEN": "Deconstructed Parmigiana",
+      "desc": "Pomodoro, parmigiano, melanzane, burrata, basilico",
+      "descEN": "Tomato, parmesan, aubergine, burrata, basil",
+      "trancio": "€2,50",
+      "mezza": "€15,00",
+      "teglia": "€28,00",
+      "cat": "special",
+      "special": true
+    },
+    {
+      "num": 10,
+      "name": "La Mortazza",
+      "nameEN": "Mortadella",
+      "desc": "Mortadella, stracciatella, granella di pistacchio",
+      "descEN": "Mortadella, stracciatella, crushed pistachios",
+      "trancio": "€2,50",
+      "mezza": "€15,00",
+      "teglia": "€25,00",
+      "cat": "special",
+      "special": true
+    },
+    {
+      "num": 11,
+      "name": "Primavera",
+      "nameEN": "Primavera",
+      "desc": "Pomodoro fresco, rucola, prosciutto crudo, grana",
+      "descEN": "Fresh tomato, rocket, raw ham, parmesan",
+      "trancio": "€2,50",
+      "mezza": "€15,00",
+      "teglia": "€25,00",
+      "cat": "veggie"
+    },
+    {
+      "num": 12,
+      "name": "Intensa",
+      "nameEN": "Spicy",
+      "desc": "Datterino giallo, spianata piccante, stracciatella",
+      "descEN": "Yellow cherry tomato, spicy salami, stracciatella",
+      "trancio": "€2,50",
+      "mezza": "€15,00",
+      "teglia": "€28,00",
+      "cat": "special",
+      "special": true,
+      "spicy": true
+    },
+    {
+      "num": 13,
+      "name": "Ortolana",
+      "nameEN": "Garden Vegetable",
+      "desc": "Pomodoro, melanzane, zucchine, peperoni, mozzarella",
+      "descEN": "Tomato, aubergine, courgette, peppers, mozzarella",
+      "trancio": "€2,00",
+      "mezza": "€11,50",
+      "teglia": "€20,00",
+      "cat": "veggie"
+    },
+    {
+      "num": 14,
+      "name": "4 Formaggi",
+      "nameEN": "Four Cheeses",
+      "desc": "Mozzarella, gorgonzola, parmigiano, pecorino",
+      "descEN": "Mozzarella, gorgonzola, parmesan, pecorino",
+      "trancio": "€2,00",
+      "mezza": "€11,50",
+      "teglia": "€20,00",
+      "cat": "classic"
+    },
+    {
+      "num": 15,
+      "name": "Contrasto",
+      "nameEN": "Contrast",
+      "desc": "Datterino giallo, crema di pistacchio, tonno, cipolla caramellata",
+      "descEN": "Yellow cherry tomato, pistachio cream, tuna, caramelized onion",
+      "trancio": "€2,50",
+      "mezza": "€15,00",
+      "teglia": "€25,00",
+      "cat": "seafood",
+      "special": true
+    },
+    {
+      "num": 16,
+      "name": "Oro Nero",
+      "nameEN": "Black Gold",
+      "desc": "Pomodorini, speck, crema di parmigiano, granella di olive nere",
+      "descEN": "Cherry tomatoes, speck, parmesan cream, crushed black olives",
+      "trancio": "€2,50",
+      "mezza": "€15,00",
+      "teglia": "€25,00",
+      "cat": "special"
+    },
+    {
+      "num": 17,
+      "name": "Sila",
+      "nameEN": "Sila",
+      "desc": "Patate mpacchiuse, funghi porcini, salsiccia fresca",
+      "descEN": "Local potatoes, porcini mushrooms, fresh sausage",
+      "trancio": "€2,50",
+      "mezza": "€15,00",
+      "teglia": "€25,00",
+      "cat": "special",
+      "special": true
+    },
+    {
+      "num": 18,
+      "name": "Tonno e Cipolla",
+      "nameEN": "Tuna & Onion",
+      "desc": "Pomodoro, mozzarella, tonno, cipolla",
+      "descEN": "Tomato, mozzarella, tuna, onion",
+      "trancio": "€2,00",
+      "mezza": "€11,50",
+      "teglia": "€20,00",
+      "cat": "seafood"
+    },
+    {
+      "num": 19,
+      "name": "Soft",
+      "nameEN": "Soft",
+      "desc": "Prosciutto cotto, mozzarella",
+      "descEN": "Cooked ham, mozzarella",
+      "trancio": "€2,00",
+      "mezza": "€11,50",
+      "teglia": "€20,00",
+      "cat": "classic"
+    },
+    {
+      "num": 20,
+      "name": "Fresca",
+      "nameEN": "Fresh",
+      "desc": "Datterino giallo, datterino rosso, mozzarella, acciughe",
+      "descEN": "Yellow cherry tomato, red cherry tomato, mozzarella, anchovies",
+      "trancio": "€2,50",
+      "mezza": "€15,00",
+      "teglia": "€25,00",
+      "cat": "seafood"
+    },
+    {
+      "num": 21,
+      "name": "Smeraldo",
+      "nameEN": "Emerald",
+      "desc": "Zucchine julienne, gamberi, salsa cocktail",
+      "descEN": "Julienne courgette, prawns, cocktail sauce",
+      "trancio": "€2,50",
+      "mezza": "€15,00",
+      "teglia": "€25,00",
+      "cat": "seafood"
+    }
+  ],
+  "drinks": [
+    {
+      "name": "Martini",
+      "ingredients": "Gin o Vodka, Vermuth Extra Dry · Dec: Zest Limone, Oliv",
+      "price": "€5"
+    },
+    {
+      "name": "Cuba Libre",
+      "ingredients": "Rum, Lime, Coca Cola · Dec: Lime",
+      "price": "€5"
+    },
+    {
+      "name": "Margarita",
+      "ingredients": "Tequila, Triple Sec, Lime · Dec: Rim Sale",
+      "price": "€7"
+    },
+    {
+      "name": "Daiquiri",
+      "ingredients": "Rum, Lime, Zucchero · Dec: Zest Lime",
+      "price": "€5"
+    },
+    {
+      "name": "Kamikaze",
+      "ingredients": "Vodka, Triple Sec, Limone, Zucchero · Dec: Zest Limone",
+      "price": "€5"
+    },
+    {
+      "name": "Aperol Spritz",
+      "ingredients": "Aperol, Prosecco, Soda · Dec: Arancia",
+      "price": "€5"
+    },
+    {
+      "name": "Campari Spritz",
+      "ingredients": "Campari, Prosecco, Soda · Dec: Arancia",
+      "price": "€5"
+    },
+    {
+      "name": "Vodka Sour",
+      "ingredients": "Vodka, Limone, Zucchero · Dec: Limone",
+      "price": "€5"
+    },
+    {
+      "name": "Whisky Sour",
+      "ingredients": "Whisky, Limone, Zucchero · Dec: Limone",
+      "price": "€5"
+    },
+    {
+      "name": "Midori Sour",
+      "ingredients": "Midori, Limone, Zucchero · Dec: Limone",
+      "price": "€5"
+    },
+    {
+      "name": "Cosmopolitan",
+      "ingredients": "Vodka, Triple Sec, Cranberry, Lime · Dec: Peel Arancia",
+      "price": "€5"
+    },
+    {
+      "name": "Caipirinha",
+      "ingredients": "Cachaça, Lime, Zucchero · Dec: Lime",
+      "price": "€5"
+    },
+    {
+      "name": "White Lady",
+      "ingredients": "Gin, Triple Sec, Limone, Zucchero · Dec: Zest Limone",
+      "price": "€5"
+    },
+    {
+      "name": "Gin Fizz",
+      "ingredients": "Gin, Lime, Zucchero, Soda · Dec: Limone",
+      "price": "€6"
+    },
+    {
+      "name": "Long Island Iced Tea",
+      "ingredients": "Vodka, Gin, Rum, Tequila, Triple Sec, Top Coca Cola · Dec: Zest Limone",
+      "price": "€6"
+    },
+    {
+      "name": "Japanese Ice Tea",
+      "ingredients": "Vodka, Rum, Gin, Midori, Limone, Zucchero · Dec: Limone",
+      "price": "€5"
+    },
+    {
+      "name": "Miami Ice Tea",
+      "ingredients": "Vodka, Rum, Gin, Blue Curaçao, Limone, Zucchero · Dec: Limone",
+      "price": "€5"
+    },
+    {
+      "name": "Sex on the Beach",
+      "ingredients": "Vodka, Peach, Arancia, Cranberry · Dec: Zest Arancia",
+      "price": "€5"
+    },
+    {
+      "name": "Tequila Sunrise",
+      "ingredients": "Tequila, Arancia, Granatina · Dec: Arancia",
+      "price": "€5"
+    },
+    {
+      "name": "Americano",
+      "ingredients": "Vermuth Rosso, Campari Bitter, Soda · Dec: Arancia",
+      "price": "€5"
+    },
+    {
+      "name": "Negroni Sbagliato",
+      "ingredients": "Vermuth Rosso, Campari Bitter, Prosecco · Dec: Arancia",
+      "price": "€5"
+    },
+    {
+      "name": "Negroni",
+      "ingredients": "Gin Bombay, Vermuth Rosso, Campari Bitter · Dec: Zest Arancia",
+      "price": "€6"
+    },
+    {
+      "name": "Moscow Mule",
+      "ingredients": "Vodka, Lime, Ginger Beer · Dec: Lime",
+      "price": "€6"
+    },
+    {
+      "name": "Old Fashioned",
+      "ingredients": "Bourbon Whisky, Angostura Bitter, Soda, Zucchero · Dec: Zest Limone, Arancia, Ciliegie Marasca",
+      "price": "€5"
+    },
+    {
+      "name": "Pornostar Martini",
+      "ingredients": "Vodka, Passoa, Lime, Passion Fruit, Prosecco · Dec: Passion Fruit",
+      "price": "€5"
+    },
+    {
+      "name": "Mojito",
+      "ingredients": "Rum, Menta, Lime, Zucchero, Soda · Dec: Menta",
+      "price": "€7"
+    },
+    {
+      "name": "Caipiroska",
+      "ingredients": "Fragola / Lime / Passion Fruit · Vodka, Lime, Zucchero · Dec: Lime",
+      "price": "€5"
+    },
+    {
+      "name": "Paloma",
+      "ingredients": "Tequila, Lime, Agave, Fever Tree Pompelmo · Dec: Pompelmo Rosa",
+      "price": "€8"
+    },
+    {
+      "name": "Pina Colada",
+      "ingredients": "Rum, Lime, Ananas, Cocco · Dec: Ananas",
+      "price": "€5"
+    },
+    {
+      "name": "Manhattan",
+      "ingredients": "Ry Whisky, Vermouth Rosso, Angostura Bitter · Dec: Zest Arancia",
+      "price": "€5"
+    },
+    {
+      "name": "Mai Tai",
+      "ingredients": "Rum Bianco, Rum Scuro, Triple Sec, Lime, Orzata · Dec: Ananas",
+      "price": "€5"
+    },
+    {
+      "name": "French 75",
+      "ingredients": "Gin, Limone, Zucchero, Prosecco · Dec: Zest Limone",
+      "price": "€6"
+    }
+  ]
+}
