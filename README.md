@@ -41,6 +41,19 @@ Add a new site:
 2. `node scripts/build.mjs --all` (or `--site <nuovo-sito>`)
 3. Publish `dist/<site-id>/` to that domain's repo (Settings → Pages, root `/`)
 
+Optional per-site fields in `config.json`:
+
+- `theme` — accent/background palette; borders, glows and shadows are derived from `theme.gold`
+- `branding.shape: "square"` — rounded-square logo containers for non-circular logos (default: circle)
+- `sections.drinks: false` — hides the drinks section, nav item and hero CTA
+- `order.url: ""` — hides every order button (no wrong links)
+- `menuLegend: null` — hides the price legend (default: static HTML)
+- `filters: [{ id, it, en }]` — menu category buttons, replaces the static ones
+- `stats: [{ num, it, en }]` — About section numbers
+- `menu[].prices: [{ label, labelEN, value }]` — free-form price pills
+  (omitting `prices` keeps the pizzeria format `trancio` / `mezza` / `teglia`)
+- `sites/<site>/assets/` — optional per-site logo, copied over the shared `assets/`
+
 When you change the layout, edit the shared files once and rebuild all sites.
 
 ## Automatic deploy (GitHub Actions)

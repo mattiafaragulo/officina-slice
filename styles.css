@@ -11,6 +11,11 @@
   --gold: #c9a84c;
   --gold-light: #e8c96a;
   --gold-dim: rgba(201, 168, 76, 0.15);
+  --gold-a04: rgba(201, 168, 76, 0.04);
+  --gold-a20: rgba(201, 168, 76, 0.2);
+  --gold-a25: rgba(201, 168, 76, 0.25);
+  --gold-a30: rgba(201, 168, 76, 0.3);
+  --gold-a40: rgba(201, 168, 76, 0.4);
   --white: #f5f0e8;
   --white-dim: rgba(245, 240, 232, 0.6);
   --white-faint: rgba(245, 240, 232, 0.08);
@@ -19,7 +24,7 @@
   --radius: 12px;
   --radius-lg: 20px;
   --shadow: 0 8px 32px rgba(0,0,0,0.5);
-  --shadow-gold: 0 4px 24px rgba(201, 168, 76, 0.2);
+  --shadow-gold: 0 4px 24px var(--gold-a20);
   --font-display: 'Playfair Display', serif;
   --font-body: 'Barlow', sans-serif;
   --font-condensed: 'Barlow Condensed', sans-serif;
@@ -232,7 +237,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .btn-primary:hover {
   background: var(--gold-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(201, 168, 76, 0.4);
+  box-shadow: 0 8px 32px var(--gold-a40);
 }
 .scroll-indicator {
   position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
@@ -331,14 +336,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: var(--transition);
 }
 .menu-card:hover {
-  border-color: rgba(201, 168, 76, 0.3);
+  border-color: var(--gold-a30);
   transform: translateY(-3px);
   box-shadow: var(--shadow-gold);
 }
 .menu-card:hover::before { opacity: 1; }
 .menu-card.special {
-  border-color: rgba(201, 168, 76, 0.25);
-  background: linear-gradient(135deg, var(--dark-card), rgba(201, 168, 76, 0.04));
+  border-color: var(--gold-a25);
+  background: linear-gradient(135deg, var(--dark-card), var(--gold-a04));
 }
 .menu-card.hidden { display: none; }
 .card-top {
@@ -392,7 +397,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 3px 8px;
   border-radius: 4px;
 }
-.badge-special { background: rgba(201, 168, 76, 0.15); color: var(--gold); }
+.badge-special { background: var(--gold-dim); color: var(--gold); }
 .badge-veggie { background: rgba(39, 174, 96, 0.15); color: #5dbd7d; }
 .badge-seafood { background: rgba(41, 128, 185, 0.15); color: #5ba3c9; }
 .badge-spicy { background: rgba(192, 57, 43, 0.15); color: #e05c4b; }
@@ -464,7 +469,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   content: '';
   position: absolute; inset: -12px;
   border-radius: 50%;
-  border: 1px dashed rgba(201, 168, 76, 0.2);
+  border: 1px dashed var(--gold-a20);
   animation: spin 30s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -496,7 +501,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: var(--transition);
 }
 .contact-card:hover {
-  border-color: rgba(201, 168, 76, 0.3);
+  border-color: var(--gold-a30);
   transform: translateY(-3px);
 }
 .contact-icon { font-size: 2rem; margin-bottom: 12px; }
@@ -571,7 +576,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
   margin: 0 auto 32px;
   border: 2px solid var(--gold);
-  box-shadow: 0 0 0 8px var(--gold-dim), 0 0 40px rgba(201, 168, 76, 0.2);
+  box-shadow: 0 0 0 8px var(--gold-dim), 0 0 40px var(--gold-a20);
   background: #000;
   animation: fadeDown 1s ease both;
 }
@@ -683,7 +688,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   opacity: 0;
   transition: var(--transition);
 }
-.drink-card:hover { border-color: rgba(201, 168, 76, 0.4); transform: translateY(-3px); box-shadow: var(--shadow-gold); }
+.drink-card:hover { border-color: var(--gold-a40); transform: translateY(-3px); box-shadow: var(--shadow-gold); }
 .drink-card:hover::before { opacity: 1; }
 .drink-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 .drink-name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; flex: 1; }
@@ -735,12 +740,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 7px 16px;
   transition: var(--transition);
   white-space: nowrap;
-  box-shadow: 0 2px 12px rgba(201, 168, 76, 0.25);
+  box-shadow: 0 2px 12px var(--gold-a25);
 }
 .nav-order-btn:hover {
   background: var(--gold-light);
   transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.4);
+  box-shadow: 0 4px 20px var(--gold-a40);
 }
 
 /* ===== HERO ORDER BUTTON ===== */
@@ -780,6 +785,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   opacity: 0.6;
 }
 .footer-logo { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ===== PER-SITE LOGO SHAPE ===== */
+/* Loghi non circolari (es. stemmi con banner): forma arrotondata invece del cerchio */
+.logo-square .nav-logo-circle,
+.logo-square .hero-logo-wrap,
+.logo-square .about-logo-wrap,
+.logo-square .footer-logo-wrap {
+  border-radius: 16%;
+}
+.logo-square .about-logo-wrap::before {
+  border-radius: 18%;
+}
+.logo-square .nav-logo-circle img,
+.logo-square .hero-logo-img,
+.logo-square .about-logo-wrap img,
+.logo-square .footer-logo {
+  object-fit: contain;
+}
 
 /* ===== ABOUT LOGO CIRCLE (keep same) ===== */
 .about-logo-wrap img { width: 200px; height: 200px; object-fit: cover; border-radius: 50%; }

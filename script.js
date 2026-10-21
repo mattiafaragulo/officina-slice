@@ -287,6 +287,39 @@ function getStrings(lang) {
   return merged;
 }
 
+function hexToRgb(hex) {
+  const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex || '');
+  return m ? `${parseInt(m[1], 16)}, ${parseInt(m[2], 16)}, ${parseInt(m[3], 16)}` : null;
+}
+
+function applyTheme(theme) {
+  const root = document.documentElement.style;
+  const map = {
+    gold: '--gold', goldLight: '--gold-light', black: '--black', dark: '--dark',
+    darkCard: '--dark-card', darkBorder: '--dark-border', white: '--white'
+  };
+  Object.keys(map).forEach(k => { if (theme[k]) root.setProperty(map[k], theme[k]); });
+  const rgb = hexToRgb(theme.gold);
+  if (rgb) {
+    root.setProperty('--gold-dim', `rgba(${rgb}, 0.15)`);
+    root.setProperty('--gold-a04', `rgba(${rgb}, 0.04)`);
+    root.setProperty('--gold-a20', `rgba(${rgb}, 0.2)`);
+    root.setProperty('--gold-a25', `rgba(${rgb}, 0.25)`);
+    root.setProperty('--gold-a30', `rgba(${rgb}, 0.3)`);
+    root.setProperty('--gold-a40', `rgba(${rgb}, 0.4)`);
+  }
+}
+
+function renderStats() {
+  if (!SITE_CONFIG || !Array.isArray(SITE_CONFIG.stats)) return;
+  const wrap = document.querySelector('.about-stats');
+  if (!wrap) return;
+  wrap.innerHTML = SITE_CONFIG.stats.map(s =>
+    `<div class="stat"><span class="stat-num">${s.num}</span>` +
+    `<span class="stat-label">${currentLang === 'en' ? (s.en || s.it) : s.it}</span></div>`
+  ).join('');
+}
+
 function applySiteConfig() {
   if (!SITE_CONFIG) return;
   const name = (SITE_CONFIG.site && SITE_CONFIG.site.name) || document.title;
@@ -296,17 +329,26 @@ function applySiteConfig() {
     const md = SITE_CONFIG.site.metaDescription;
     meta.setAttribute('content', md[currentLang] || md.it || meta.getAttribute('content'));
   }
+  const brandLogo = SITE_CONFIG.branding && SITE_CONFIG.branding.logo;
+  if (brandLogo) {
+    document.querySelectorAll('.nav-logo-circle img, .hero-logo-img, .about-visual img, .footer-logo')
+      .forEach(img => img.setAttribute('src', brandLogo));
+  }
+  if (SITE_CONFIG.branding && SITE_CONFIG.branding.shape === 'square') {
+    document.body.classList.add('logo-square');
+  }
+  if (SITE_CONFIG.sections && SITE_CONFIG.sections.drinks === false) {
+    document.querySelectorAll('.hero-btns a[href="#drinks"]').forEach(a => { a.style.display = 'none'; });
+    const ds = document.getElementById('drinks');
+    if (ds) ds.style.display = 'none';
+    const dl = document.querySelector('.nav-links a[href="#drinks"]');
+    if (dl && dl.closest('li')) dl.closest('li').style.display = 'none';
+  }
   if (SITE_CONFIG.order && SITE_CONFIG.order.url) {
     document.querySelectorAll('[data-order-link]').forEach(a => a.setAttribute('href', SITE_CONFIG.order.url));
   } else if (SITE_CONFIG.order) {
     // Sito senza ordini online: nascondi i bottoni invece di linkare il sito sbagliato
     document.querySelectorAll('[data-order-link]').forEach(a => { a.style.display = 'none'; });
-  }
-  if (SITE_CONFIG.sections && SITE_CONFIG.sections.drinks === false) {
-    const ds = document.getElementById('drinks');
-    if (ds) ds.style.display = 'none';
-    const dl = document.querySelector('.nav-links a[href="#drinks"]');
-    if (dl && dl.closest('li')) dl.closest('li').style.display = 'none';
   }
   if (SITE_CONFIG.contact) {
     const addr = document.getElementById('contactAddress');
@@ -320,16 +362,7 @@ function applySiteConfig() {
   const brand = document.getElementById('footerBrand');
   if (brand) brand.textContent = '© ' + new Date().getFullYear() + ' ' + name;
   const theme = SITE_CONFIG.theme;
-  if (theme) {
-    const root = document.documentElement.style;
-    if (theme.gold) root.setProperty('--gold', theme.gold);
-    if (theme.goldLight) root.setProperty('--gold-light', theme.goldLight);
-    if (theme.black) root.setProperty('--black', theme.black);
-    if (theme.dark) root.setProperty('--dark', theme.dark);
-    if (theme.darkCard) root.setProperty('--dark-card', theme.darkCard);
-    if (theme.darkBorder) root.setProperty('--dark-border', theme.darkBorder);
-    if (theme.white) root.setProperty('--white', theme.white);
-  }
+  if (theme) applyTheme(theme);
   if (SITE_CONFIG.site && SITE_CONFIG.site.defaultLang) currentLang = SITE_CONFIG.site.defaultLang;
 }
 
@@ -343,6 +376,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   applySiteConfig();
   applyTranslations();
   renderLegend();
+  renderStats();
   renderMenu();
   renderDrinks();
   setupNav();
@@ -518,6 +552,7 @@ function setupLangToggle() {
     applyTranslations();
     renderFilters();
     renderLegend();
+    renderStats();
     renderMenu();
     renderDrinks();
   });
