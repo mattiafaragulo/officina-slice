@@ -76,14 +76,6 @@ One-time setup per new domain:
 6. Push to `main` and check the Actions tab. If a site has no changes,
    its push is skipped.
 
-## Features
-- 🍕 20 pizzas from the handwritten menu
-- 🌍 Italian/English language toggle
-- 🔍 Category filter (Classiche, Speciali, Veggie, Mare)
-- 📱 Mobile-first responsive design
-- 🌙 Dark mode aesthetic
-- ✨ Smooth scroll animations
-
 ## Customization
 - Update prices and descriptions in `script.js`
 - Update contact info in `index.html` contact section
