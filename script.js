@@ -388,13 +388,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Una voce può avere prezzi liberi [{label, labelEN, value}] oppure, in
 // retrocompatibilità col formato pizzeria, trancio/mezza/teglia.
 function renderPrices(p, t) {
-  if (p.prices && p.prices.length) {
+  if (Array.isArray(p.prices)) {
+    if (!p.prices.length) return '';
     return p.prices.map(x =>
       `<div class="price-pill">` +
       `<span class="price-pill-label">${currentLang === 'en' ? (x.labelEN || x.label) : x.label}</span>` +
       `<span class="price-pill-val">${x.value}</span></div>`
     ).join('');
   }
+  if (!p.trancio && !p.mezza && !p.teglia) return '';
   return (
     `<div class="price-pill"><span class="price-pill-label">${t.trancio}</span>` +
     `<span class="price-pill-val">${p.trancio}</span></div>` +
@@ -422,15 +424,14 @@ function renderMenu() {
     if (p.cat === 'veggie') badges += `<span class="badge badge-veggie">Veggie</span>`;
     if (p.cat === 'seafood') badges += `<span class="badge badge-seafood">${currentLang==='en'?'Seafood':'Mare'}</span>`;
     if (p.spicy) badges += `<span class="badge badge-spicy">${currentLang==='en'?'Spicy':'Piccante'}</span>`;
+    const priceHtml = renderPrices(p, t);
     card.innerHTML = `
       <div class="card-top">
         <span class="card-num">#${String(p.num).padStart(2,'0')}</span>
         <span class="card-name">${name}</span>
       </div>
       <p class="card-desc">${desc}</p>
-      <div class="card-prices">
-        ${renderPrices(p, t)}
-      </div>
+      ${priceHtml ? `<div class="card-prices">${priceHtml}</div>` : ''}
       ${badges ? `<div class="card-badges">${badges}</div>` : ''}
     `;
     grid.appendChild(card);
@@ -560,6 +561,7 @@ function setupLangToggle() {
 
 function applyTranslations() {
   const t = getStrings(currentLang);
+  document.documentElement.lang = currentLang;
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
     if (t[key] === undefined) return;
