@@ -1031,3 +1031,30 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   .stat-num { font-size: 1.8rem; }
 }
+
+
+/* ===== MENU DRINKS: CATEGORIE E LOGHI ===== */
+.drink-category-title {
+  grid-column: 1 / -1;
+  margin: 24px 0 0;
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.drink-category-title:first-child { margin-top: 0; }
+
+/* Mantiene i loghi completi e non tagliati, anche con le regole generiche
+   che impostano object-fit: cover più in alto nel foglio di stile. */
+.logo-square .nav-logo-circle img,
+.logo-square .hero-logo-img,
+.logo-square .about-logo-wrap img,
+.logo-square .footer-logo {
+  object-fit: contain;
+  border-radius: 0;
+}
+.logo-square .about-logo-wrap img {
+  width: 200px;
+  height: 200px;
+}

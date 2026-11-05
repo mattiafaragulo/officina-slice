@@ -442,17 +442,28 @@ function renderMenu() {
 // ===== RENDER DRINKS =====
 function renderDrinks() {
   const grid = document.getElementById('drinksGrid');
+  if (!grid) return;
   grid.innerHTML = '';
+  let currentCategory = null;
   getDrinks().forEach((d, i) => {
+    if (d.category && d.category !== currentCategory) {
+      currentCategory = d.category;
+      const heading = document.createElement('h3');
+      heading.className = 'drink-category-title';
+      heading.textContent = currentLang === 'en' ? (d.categoryEN || d.category) : d.category;
+      grid.appendChild(heading);
+    }
     const card = document.createElement('div');
     card.className = 'drink-card reveal';
     card.style.animationDelay = (i * 0.04) + 's';
+    const price = d.price ? `<span class="drink-price">${d.price}</span>` : '';
+    const ingredients = d.ingredients ? `<p class="drink-ingredients">${d.ingredients}</p>` : '';
     card.innerHTML = `
       <div class="drink-card-top">
-        <span class="drink-name">${d.name}</span>
-        <span class="drink-price">${d.price}</span>
+        <span class="drink-name">${currentLang === 'en' ? (d.nameEN || d.name) : d.name}</span>
+        ${price}
       </div>
-      <p class="drink-ingredients">${d.ingredients}</p>
+      ${ingredients}
     `;
     grid.appendChild(card);
   });
