@@ -24,7 +24,7 @@
     "url": ""
   },
   "sections": {
-    "drinks": false
+    "drinks": true
   },
   "menuLegend": null,
   "filters": [
@@ -65,13 +65,8 @@
     },
     {
       "id": "contorni",
-      "it": "Contorni",
-      "en": "Sides"
-    },
-    {
-      "id": "salse",
-      "it": "Salse",
-      "en": "Sauces"
+      "it": "Starter",
+      "en": "Starters"
     },
     {
       "id": "fuoribun",
@@ -82,11 +77,6 @@
       "id": "taglieri",
       "it": "Taglieri",
       "en": "Boards"
-    },
-    {
-      "id": "componibile",
-      "it": "Componibile",
-      "en": "Build Your Own"
     }
   ],
   "contact": {
@@ -111,7 +101,9 @@
       "about.title": "L'Officina Smash",
       "about.p1": "Officina Smash nasce dalla piastra rovente: carne smashata al momento, crosticina irresistibile e bun brioche tostato. Accendiamo la piastra, tu prepara l'appetito.",
       "about.p2": "Dagli smash burger alle braciole messinesi piastrate, dal chicken garage agli hot dog fino ai fritti da condividere: ogni morso è street food pensato per sporcarsi le mani, ma non la coscienza.",
-      "about.pizze": "Proposte"
+      "about.pizze": "Proposte",
+      "drinks.title": "Birre e Bibite",
+      "drinks.desc": "Birre e bibite analcoliche"
     },
     "en": {
       "hero.tagline": "Smash Burgers · Signature Street Food",
@@ -122,7 +114,9 @@
       "about.title": "Officina Smash",
       "about.p1": "Officina Smash is born on a sizzling griddle: meat smashed to order, an irresistible crust and a toasted brioche bun. We fire up the griddle, you bring your appetite.",
       "about.p2": "From smash burgers to griddled Messina-style braciole, from chicken garage to hot dogs and sharing fry boxes: every bite is street food made for dirty hands and clean consciences.",
-      "about.pizze": "Items"
+      "about.pizze": "Items",
+      "drinks.title": "Beers & Soft Drinks",
+      "drinks.desc": "Beers and soft drinks"
     }
   },
   "menu": [
@@ -136,37 +130,37 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€10,00"
+          "value": "€9,90"
         }
       ],
       "cat": "smash"
     },
     {
       "num": 2,
-      "name": "Doppio Pistone",
-      "nameEN": "Double Piston",
-      "desc": "Doppio smash burger, doppio cheddar, bacon croccante, cipolla caramellata e salsa Officina.",
-      "descEN": "Double smashed beef burger, double cheddar, crispy bacon, caramelized onion and Officina sauce.",
+      "name": "L’American",
+      "nameEN": "The American",
+      "desc": "Doppio smash burger, doppio cheddar, bacon croccante, cipolla cruda, cetriolini e salsa Officina.",
+      "descEN": "Double smashed beef burger, double cheddar, crispy bacon, raw onion, pickles and Officina sauce.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€10,00"
+          "value": "€9,90"
         }
       ],
       "cat": "smash"
     },
     {
       "num": 3,
-      "name": "Il Fuorigiri",
-      "nameEN": "The Redline",
-      "desc": "Smash burger, provola affumicata, bacon, cipolla croccante, cetriolini e salsa BBQ.",
-      "descEN": "Smashed beef burger, smoked provola, bacon, crispy onion, pickles and BBQ sauce.",
+      "name": "Smoky",
+      "nameEN": "Smoky",
+      "desc": "Smash burger, provola affumicata, bacon, cipolla caramellata, cetriolini e salsa BBQ.",
+      "descEN": "Smashed beef burger, smoked provola, bacon, caramelized onion, pickles and BBQ sauce.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€9,00"
+          "value": "€8,90"
         }
       ],
       "cat": "smash"
@@ -181,7 +175,7 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€10,00"
+          "value": "€9,90"
         }
       ],
       "cat": "smash",
@@ -212,7 +206,7 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€10,00"
+          "value": "€9,90"
         }
       ],
       "cat": "salsiccia",
@@ -222,13 +216,13 @@
       "num": 7,
       "name": "Alta Pressione",
       "nameEN": "High Pressure",
-      "desc": "Salsiccia smashata, cheddar, bacon croccante, cipolla e salsa BBQ.",
-      "descEN": "Smashed sausage, cheddar, crispy bacon, onion and BBQ sauce.",
+      "desc": "Salsiccia silana smashata, cheddar, bacon croccante, cipolla caramellata e salsa BBQ.",
+      "descEN": "Smashed Sila sausage, cheddar, crispy bacon, caramelized onion and BBQ sauce.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€9,00"
+          "value": "€8,90"
         }
       ],
       "cat": "salsiccia"
@@ -237,13 +231,13 @@
       "num": 8,
       "name": "Tutto Gas",
       "nameEN": "Full Throttle",
-      "desc": "Salsiccia smashata, provola affumicata, melanzane grigliate e maionese al peperoncino.",
-      "descEN": "Smashed sausage, smoked provola, grilled aubergine and chili mayo.",
+      "desc": "Salsiccia silana smashata, provola affumicata, melanzane grigliate e maionese.",
+      "descEN": "Smashed Sila sausage, smoked provola, grilled aubergine and mayonnaise.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€9,00"
+          "value": "€8,90"
         }
       ],
       "cat": "salsiccia"
@@ -252,13 +246,13 @@
       "num": 9,
       "name": "Lo Stretto Smash",
       "nameEN": "The Strait Smash",
-      "desc": "Braciole messinesi, provola, melanzane grigliate, lattuga e salsa della casa.",
-      "descEN": "Messina-style braciole, provola, grilled aubergine, lettuce and house sauce.",
+      "desc": "Braciole messinesi, sottiletta, lattuga e maionese.",
+      "descEN": "Messina-style braciole, sottiletta cheese, lettuce and mayonnaise.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€9,00"
+          "value": "€8,90"
         }
       ],
       "cat": "braciole",
@@ -274,7 +268,7 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€10,00"
+          "value": "€9,90"
         }
       ],
       "cat": "braciole"
@@ -283,28 +277,28 @@
       "num": 11,
       "name": "Il Peloritano",
       "nameEN": "The Peloritano",
-      "desc": "Braciole messinesi, pomodoro, insalata, patate croccanti e salsa piccante.",
-      "descEN": "Messina-style braciole, tomato, salad, crispy potatoes and spicy sauce.",
+      "desc": "Braciole messinesi, pomodoro, insalata, patate silane e salsa piccante.",
+      "descEN": "Messina-style braciole, tomato, salad, Sila potatoes and spicy sauce.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€9,00"
+          "value": "€8,90"
         }
       ],
       "cat": "braciole"
     },
     {
       "num": 12,
-      "name": "Eco Turbo",
-      "nameEN": "Eco Turbo",
-      "desc": "Petto di pollo grigliato, lattuga, pomodoro e salsa yogurt alle erbe.",
-      "descEN": "Grilled chicken breast, lettuce, tomato and herb yogurt sauce.",
+      "name": "Crispy Fresco",
+      "nameEN": "Crispy Fresco",
+      "desc": "Pollo croccante, lattuga, sottiletta e maionese.",
+      "descEN": "Crispy chicken, lettuce, sottiletta cheese and mayonnaise.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€8,00"
+          "value": "€7,90"
         }
       ],
       "cat": "chicken"
@@ -319,7 +313,7 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€8,00"
+          "value": "€7,90"
         }
       ],
       "cat": "chicken"
@@ -334,7 +328,7 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€9,00"
+          "value": "€8,90"
         }
       ],
       "cat": "chicken"
@@ -349,13 +343,22 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€8,00"
+          "value": "€7,90"
         }
       ],
       "cat": "chicken"
     },
     {
       "num": 16,
+      "name": "Hot Dog Classic",
+      "nameEN": "Classic Hot Dog",
+      "desc": "Wurstel e senape.",
+      "descEN": "Frankfurter and mustard.",
+      "prices": [],
+      "cat": "hotdog"
+    },
+    {
+      "num": 17,
       "name": "Hot Rod",
       "nameEN": "Hot Rod",
       "desc": "Wurstel, cheddar, bacon croccante, cipolla caramellata e salsa Officina.",
@@ -364,13 +367,13 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€8,00"
+          "value": "€7,90"
         }
       ],
       "cat": "hotdog"
     },
     {
-      "num": 17,
+      "num": 18,
       "name": "Turbo Dog",
       "nameEN": "Turbo Dog",
       "desc": "Wurstel, patatine, cheddar e salsa BBQ.",
@@ -379,28 +382,28 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€8,00"
+          "value": "€7,90"
         }
       ],
       "cat": "hotdog"
     },
     {
-      "num": 18,
-      "name": "Green Machine",
-      "nameEN": "Green Machine",
-      "desc": "Bun brioche tostato, burger vegetale, scamorza affumicata, melanzane grigliate, rucola e maionese alle erbe.",
-      "descEN": "Toasted brioche bun, veggie burger, smoked scamorza, grilled aubergine, rocket and herb mayo.",
+      "num": 19,
+      "name": "Green Sila",
+      "nameEN": "Green Sila",
+      "desc": "Hamburger vegetariano (tipologia da definire).",
+      "descEN": "Vegetarian burger (type to be confirmed).",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€10,00"
+          "value": "€9,90"
         }
       ],
       "cat": "veggie"
     },
     {
-      "num": 19,
+      "num": 20,
       "name": "Orto Fuorigiri",
       "nameEN": "Redline Garden",
       "desc": "Bun brioche tostato, burger di melanzane, provola, pomodoro, lattuga, cipolla croccante e salsa yogurt.",
@@ -409,13 +412,94 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€8,00"
+          "value": "€7,90"
         }
       ],
       "cat": "veggie"
     },
     {
-      "num": 20,
+      "num": 21,
+      "name": "Stick",
+      "nameEN": "Fries",
+      "desc": "Patatine stick.",
+      "descEN": "Stick fries.",
+      "prices": [],
+      "cat": "contorni"
+    },
+    {
+      "num": 22,
+      "name": "Super Nuggets",
+      "nameEN": "Super Nuggets",
+      "desc": "Straccetti di pollo croccanti (nuggets).",
+      "descEN": "Crispy chicken strips (nuggets).",
+      "prices": [],
+      "cat": "contorni"
+    },
+    {
+      "num": 23,
+      "name": "Le Patate Silane",
+      "nameEN": "Sila Potato Chips",
+      "desc": "Patate silane fritte chips.",
+      "descEN": "Fried Sila potato chips.",
+      "prices": [],
+      "cat": "contorni"
+    },
+    {
+      "num": 24,
+      "name": "Bocconi di Carne",
+      "nameEN": "Meat Bites",
+      "desc": "Polpette di carne fritte.",
+      "descEN": "Fried meatballs.",
+      "prices": [],
+      "cat": "contorni"
+    },
+    {
+      "num": 25,
+      "name": "Melanzana d’Oro",
+      "nameEN": "Golden Aubergine",
+      "desc": "Polpette di melanzane fritte.",
+      "descEN": "Fried aubergine balls.",
+      "prices": [],
+      "cat": "contorni"
+    },
+    {
+      "num": 26,
+      "name": "Lingotti",
+      "nameEN": "Golden Ingots",
+      "desc": "Arancini dorati.",
+      "descEN": "Golden arancini.",
+      "prices": [],
+      "cat": "contorni"
+    },
+    {
+      "num": 27,
+      "name": "Riso Crispy",
+      "nameEN": "Crispy Rice",
+      "desc": "Crocchette di riso.",
+      "descEN": "Rice croquettes.",
+      "prices": [],
+      "cat": "contorni"
+    },
+    {
+      "num": 28,
+      "name": "Le Crocchette",
+      "nameEN": "Croquettes",
+      "desc": "Crocchette di patate.",
+      "descEN": "Potato croquettes.",
+      "prices": [],
+      "cat": "contorni"
+    },
+    {
+      "num": 29,
+      "name": "Orto Grigliato",
+      "nameEN": "Grilled Garden",
+      "desc": "Verdure grigliate.",
+      "descEN": "Grilled vegetables.",
+      "prices": [],
+      "cat": "contorni"
+    },
+    {
+      "num": 30,
       "name": "Bulloni",
       "nameEN": "Bolts",
       "desc": "Anelli di cipolla dorati.",
@@ -424,28 +508,13 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€5,00"
+          "value": "€4,90"
         }
       ],
       "cat": "contorni"
     },
     {
-      "num": 21,
-      "name": "Ingranaggi",
-      "nameEN": "Gears",
-      "desc": "Patatine speziate.",
-      "descEN": "Spiced fries.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "—"
-        }
-      ],
-      "cat": "contorni"
-    },
-    {
-      "num": 22,
+      "num": 31,
       "name": "Candele",
       "nameEN": "Spark Plugs",
       "desc": "Stick di mozzarella filanti.",
@@ -454,28 +523,13 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€5,00"
+          "value": "€4,90"
         }
       ],
       "cat": "contorni"
     },
     {
-      "num": 23,
-      "name": "Pistoni",
-      "nameEN": "Pistons",
-      "desc": "Alette di pollo.",
-      "descEN": "Chicken wings.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "€6,00"
-        }
-      ],
-      "cat": "contorni"
-    },
-    {
-      "num": 24,
+      "num": 32,
       "name": "Patate Silane Fuorigiri",
       "nameEN": "Redline Sila Potatoes",
       "desc": "Patate silane con salsiccia sbriciolata e crema di caciocavallo.",
@@ -484,206 +538,199 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€7,00"
+          "value": "€6,90"
         }
       ],
       "cat": "contorni"
     },
     {
-      "num": 25,
+      "num": 33,
       "name": "Box Officina",
       "nameEN": "Officina Box",
-      "desc": "Mix di fritti da condividere.",
-      "descEN": "Mixed fried platter to share.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "€10,00"
-        }
-      ],
+      "desc": "Crocchette di patate, crocchette di riso, polpette di melanzane e polpette di carne.",
+      "descEN": "Potato croquettes, rice croquettes, aubergine balls and meatballs.",
+      "prices": [],
       "cat": "contorni",
       "special": true
     },
     {
-      "num": 26,
-      "name": "Salsa Officina",
-      "nameEN": "Officina Sauce",
-      "desc": "Cremosa, leggermente affumicata.",
-      "descEN": "Creamy, lightly smoked.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "—"
-        }
-      ],
-      "cat": "salse"
-    },
-    {
-      "num": 27,
-      "name": "Olio Motore",
-      "nameEN": "Motor Oil",
-      "desc": "Salsa BBQ.",
-      "descEN": "BBQ sauce.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "—"
-        }
-      ],
-      "cat": "salse"
-    },
-    {
-      "num": 28,
-      "name": "Alta Tensione",
-      "nameEN": "High Voltage",
-      "desc": "Maionese piccante.",
-      "descEN": "Spicy mayo.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "—"
-        }
-      ],
-      "cat": "salse"
-    },
-    {
-      "num": 29,
-      "name": "Liquido Refrigerante",
-      "nameEN": "Coolant",
-      "desc": "Salsa yogurt alle erbe.",
-      "descEN": "Herb yogurt sauce.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "—"
-        }
-      ],
-      "cat": "salse"
-    },
-    {
-      "num": 30,
-      "name": "Ottani 100",
-      "nameEN": "100 Octane",
-      "desc": "Salsa molto piccante.",
-      "descEN": "Very spicy sauce.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "—"
-        }
-      ],
-      "cat": "salse"
-    },
-    {
-      "num": 31,
-      "name": "Formato componibile",
-      "nameEN": "Build Your Own",
-      "desc": "Scegli il motore: smash burger, salsiccia smash, braciola messinese o petto di pollo. Aggiungi gli optional: cheddar, provola, caciocavallo, bacon, cipolla caramellata, verdure grigliate, patate e salsa. Completa il tagliando: patatine e bibita.",
-      "descEN": "Choose your engine: smash burger, smashed sausage, Messina-style braciola or chicken breast. Add the options: cheddar, provola, caciocavallo, bacon, caramelized onion, grilled vegetables, potatoes and sauce. Complete the service: fries and a drink.",
-      "prices": [],
-      "cat": "componibile",
-      "special": true
-    },
-    {
-      "num": 32,
+      "num": 42,
       "name": "Smash al Piatto",
       "nameEN": "Smash on a Plate",
-      "desc": "Doppio smash burger di manzo, doppio cheddar fuso, cipolla, cetriolini, salsa Officina, patate croccanti e insalata iceberg.",
-      "descEN": "Double smashed beef burger, double melted cheddar, onion, pickles, Officina sauce, crispy potatoes and iceberg lettuce.",
+      "desc": "Doppio smash burger, caciocavallo silano, patate silane, pomodoro a fette e salsa a scelta.",
+      "descEN": "Double smash burger, Sila caciocavallo cheese, Sila potatoes, sliced tomato and sauce of your choice.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€14,00"
+          "value": "€13,90"
         }
       ],
       "cat": "fuoribun",
       "special": true
     },
     {
-      "num": 33,
-      "name": "Braciola dello Stretto",
-      "nameEN": "Strait Braciola",
-      "desc": "Braciole messinesi di manzo, provola affumicata, melanzane grigliate, cipolla croccante, maionese al limone, patate e insalata.",
-      "descEN": "Messina-style beef braciole, smoked provola, grilled aubergine, crispy onion, lemon mayo, potatoes and salad.",
+      "num": 43,
+      "name": "Braciola al Piatto",
+      "nameEN": "Braciola on a Plate",
+      "desc": "Braciole messinesi, caciocavallo silano, patate silane, lattuga iceberg e salsa a scelta.",
+      "descEN": "Messina-style braciole, Sila caciocavallo cheese, Sila potatoes, iceberg lettuce and sauce of your choice.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€15,00"
+          "value": "€14,90"
         }
       ],
       "cat": "fuoribun"
     },
     {
-      "num": 34,
+      "num": 44,
       "name": "Silano al Piatto",
       "nameEN": "Silano on a Plate",
-      "desc": "Salsiccia silana aperta e smashata sulla piastra, caciocavallo silano fuso, patate croccanti, cipolla rossa caramellata e maionese piccante.",
-      "descEN": "Sila sausage opened and smashed on the griddle, melted Sila caciocavallo, crispy potatoes, caramelized red onion and spicy mayo.",
+      "desc": "Salsiccia silana aperta e smashata sulla piastra, caciocavallo silano, patate silane, melanzane grigliate e salsa a scelta.",
+      "descEN": "Sila sausage opened and smashed on the griddle, Sila caciocavallo cheese, Sila potatoes, grilled aubergine and sauce of your choice.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€14,00"
+          "value": "€13,90"
         }
       ],
       "cat": "fuoribun"
     },
     {
-      "num": 35,
-      "name": "Chicken Hot Plate",
-      "nameEN": "Chicken Hot Plate",
-      "desc": "Wurstel di pollo grigliato, cheddar fuso, cipolla croccante, patate, insalata iceberg e salsa Officina affumicata.",
-      "descEN": "Grilled chicken frankfurter, melted cheddar, crispy onion, potatoes, iceberg lettuce and smoked Officina sauce.",
+      "num": 45,
+      "name": "Chicken al Piatto",
+      "nameEN": "Chicken on a Plate",
+      "desc": "Petto di pollo grigliato, caciocavallo silano, patate silane, insalata iceberg e salsa a scelta.",
+      "descEN": "Grilled chicken breast, Sila caciocavallo cheese, Sila potatoes, iceberg lettuce and sauce of your choice.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€12,00"
+          "value": "€11,90"
         }
       ],
       "cat": "fuoribun"
     },
     {
-      "num": 36,
-      "name": "Tagliere Fuoriserie",
-      "nameEN": "Fuoriserie Board",
+      "num": 46,
+      "name": "Tagliere Officina",
+      "nameEN": "Officina Board",
       "desc": "Salumi e formaggi silani.",
       "descEN": "Sila cured meats and cheeses.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€10,00"
+          "value": "€9,90"
         }
       ],
       "cat": "taglieri",
       "special": true
     },
     {
-      "num": 37,
-      "name": "Box Revisione",
-      "nameEN": "Overhaul Box",
-      "desc": "Anelli di cipolla, stick di mozzarella, filetti di pollo, crocchette e arancini.",
-      "descEN": "Onion rings, mozzarella sticks, chicken fillets, croquettes and arancini.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "€15,00"
-        }
-      ],
-      "cat": "taglieri"
+      "num": 47,
+      "name": "Box Officina",
+      "nameEN": "Officina Box",
+      "desc": "Crocchette di patate, crocchette di riso, polpette di melanzane e polpette di carne.",
+      "descEN": "Potato croquettes, rice croquettes, aubergine balls and meatballs.",
+      "prices": [],
+      "cat": "taglieri",
+      "special": true
     }
   ],
-  "drinks": [],
+  "drinks": [
+    {
+      "category": "Birre",
+      "name": "Affligem",
+      "nameEN": "Affligem",
+      "price": "€3,00",
+      "ingredients": "",
+      "categoryEN": "Beers"
+    },
+    {
+      "category": "Birre",
+      "name": "Erdinger cl 30",
+      "nameEN": "Erdinger 30 cl",
+      "price": "€3,00",
+      "ingredients": "",
+      "categoryEN": "Beers"
+    },
+    {
+      "category": "Birre",
+      "name": "Erdinger cl 50",
+      "nameEN": "Erdinger 50 cl",
+      "price": "€3,00",
+      "ingredients": "",
+      "categoryEN": "Beers"
+    },
+    {
+      "category": "Birre",
+      "name": "Bulldog cl 20",
+      "nameEN": "Bulldog 20 cl",
+      "price": "€3,00",
+      "ingredients": "",
+      "categoryEN": "Beers"
+    },
+    {
+      "category": "Birre",
+      "name": "Bulldog cl 40",
+      "nameEN": "Bulldog 40 cl",
+      "price": "€3,00",
+      "ingredients": "",
+      "categoryEN": "Beers"
+    },
+    {
+      "category": "Birre",
+      "name": "HNK 25 cl",
+      "nameEN": "HNK 25 cl",
+      "price": "€3,00",
+      "ingredients": "",
+      "categoryEN": "Beers"
+    },
+    {
+      "category": "Birre",
+      "name": "HNK 50 cl",
+      "nameEN": "HNK 50 cl",
+      "price": "€3,00",
+      "ingredients": "",
+      "categoryEN": "Beers"
+    },
+    {
+      "category": "Bibite analcoliche",
+      "name": "Coca Cola",
+      "nameEN": "Coca-Cola",
+      "price": "",
+      "ingredients": "",
+      "categoryEN": "Soft Drinks"
+    },
+    {
+      "category": "Bibite analcoliche",
+      "name": "Coca Cola Zero",
+      "nameEN": "Coca-Cola Zero",
+      "price": "",
+      "ingredients": "",
+      "categoryEN": "Soft Drinks"
+    },
+    {
+      "category": "Bibite analcoliche",
+      "name": "Coca Cola Zero Zero",
+      "nameEN": "Coca-Cola Zero Zero",
+      "price": "",
+      "ingredients": "",
+      "categoryEN": "Soft Drinks"
+    },
+    {
+      "category": "Bibite analcoliche",
+      "name": "Fanta",
+      "nameEN": "Fanta",
+      "price": "€3,00",
+      "ingredients": "",
+      "categoryEN": "Soft Drinks"
+    }
+  ],
   "stats": [
     {
       "num": "37",
