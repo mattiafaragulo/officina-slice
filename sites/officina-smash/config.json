@@ -9,8 +9,7 @@
     "defaultLang": "it"
   },
   "branding": {
-    "logo": "assets/logo.png",
-    "shape": "square"
+    "logo": "assets/logo.png"
   },
   "theme": {
     "gold": "#b5773c",
