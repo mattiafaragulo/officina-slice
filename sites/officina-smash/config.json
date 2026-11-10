@@ -80,12 +80,12 @@
     }
   ],
   "contact": {
-    "addressHtml": "Indirizzo da definire",
-    "phoneDisplay": "Telefono da definire",
+    "addressHtml": "Via Macallè 29, Cosenza",
+    "phoneDisplay": "09841492325",
     "phoneHref": "tel:",
     "hoursHtml": {
-      "it": "Orari da definire",
-      "en": "Hours to be defined"
+      "it": "Lun-Sab: 10:30–15:00 / 17:30–00:30<br/>Domenica: 17:00–23:00<br><br>Chiuso: Domenica Mattina",
+      "en": "Mon-Sun: 10:30–15:00 / 17:30–00:30<br/>Sunday: 17:00–23:00<br><br>Closed: Sunday Morning"
     }
   },
   "footer": {
