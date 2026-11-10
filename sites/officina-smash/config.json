@@ -418,140 +418,110 @@
       "cat": "veggie"
     },
     {
+      "name": "Patate",
+      "nameEN": "Potatoes",
+      "desc": "3 pezzi.",
+      "descEN": "3 pieces.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€3,50"
+        }
+      ],
       "num": 21,
-      "name": "Stick",
-      "nameEN": "Fries",
-      "desc": "Patatine stick.",
-      "descEN": "Stick fries.",
-      "prices": [],
       "cat": "contorni"
     },
     {
+      "name": "Straccetti di pollo",
+      "nameEN": "Chicken Strips",
+      "desc": "Straccetti di pollo.",
+      "descEN": "Chicken strips.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€3,80"
+        }
+      ],
       "num": 22,
-      "name": "Super Nuggets",
-      "nameEN": "Super Nuggets",
-      "desc": "Straccetti di pollo croccanti (nuggets).",
-      "descEN": "Crispy chicken strips (nuggets).",
-      "prices": [],
       "cat": "contorni"
     },
     {
+      "name": "Patate Silane",
+      "nameEN": "Sila Potatoes",
+      "desc": "Patate silane.",
+      "descEN": "Sila potatoes.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€3,80"
+        }
+      ],
       "num": 23,
-      "name": "Le Patate Silane",
-      "nameEN": "Sila Potato Chips",
-      "desc": "Patate silane fritte chips.",
-      "descEN": "Fried Sila potato chips.",
-      "prices": [],
       "cat": "contorni"
     },
     {
+      "name": "Polpette di carne",
+      "nameEN": "Meatballs",
+      "desc": "3 pezzi.",
+      "descEN": "3 pieces.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€3,90"
+        }
+      ],
       "num": 24,
-      "name": "Bocconi di Carne",
-      "nameEN": "Meat Bites",
-      "desc": "Polpette di carne fritte.",
-      "descEN": "Fried meatballs.",
-      "prices": [],
       "cat": "contorni"
     },
     {
+      "name": "Polpette di melanzane",
+      "nameEN": "Aubergine Balls",
+      "desc": "3 pezzi.",
+      "descEN": "3 pieces.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€3,90"
+        }
+      ],
       "num": 25,
-      "name": "Melanzana d’Oro",
-      "nameEN": "Golden Aubergine",
-      "desc": "Polpette di melanzane fritte.",
-      "descEN": "Fried aubergine balls.",
-      "prices": [],
       "cat": "contorni"
     },
     {
-      "num": 26,
-      "name": "Lingotti",
-      "nameEN": "Golden Ingots",
-      "desc": "Arancini dorati.",
-      "descEN": "Golden arancini.",
-      "prices": [],
-      "cat": "contorni"
-    },
-    {
-      "num": 27,
-      "name": "Riso Crispy",
-      "nameEN": "Crispy Rice",
-      "desc": "Crocchette di riso.",
-      "descEN": "Rice croquettes.",
-      "prices": [],
-      "cat": "contorni"
-    },
-    {
-      "num": 28,
-      "name": "Le Crocchette",
-      "nameEN": "Croquettes",
-      "desc": "Crocchette di patate.",
-      "descEN": "Potato croquettes.",
-      "prices": [],
-      "cat": "contorni"
-    },
-    {
-      "num": 29,
       "name": "Orto Grigliato",
-      "nameEN": "Grilled Garden",
+      "nameEN": "Grilled Vegetables",
       "desc": "Verdure grigliate.",
       "descEN": "Grilled vegetables.",
-      "prices": [],
-      "cat": "contorni"
-    },
-    {
-      "num": 30,
-      "name": "Bulloni",
-      "nameEN": "Bolts",
-      "desc": "Anelli di cipolla dorati.",
-      "descEN": "Golden onion rings.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€4,90"
+          "value": "€4,80"
         }
       ],
+      "num": 26,
       "cat": "contorni"
     },
     {
-      "num": 31,
-      "name": "Candele",
-      "nameEN": "Spark Plugs",
-      "desc": "Stick di mozzarella filanti.",
-      "descEN": "Stretchy mozzarella sticks.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "€4,90"
-        }
-      ],
-      "cat": "contorni"
-    },
-    {
-      "num": 32,
-      "name": "Patate Silane Fuorigiri",
-      "nameEN": "Redline Sila Potatoes",
-      "desc": "Patate silane con salsiccia sbriciolata e crema di caciocavallo.",
-      "descEN": "Sila potatoes with crumbled sausage and caciocavallo cream.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "€6,90"
-        }
-      ],
-      "cat": "contorni"
-    },
-    {
-      "num": 33,
       "name": "Box Officina",
       "nameEN": "Officina Box",
-      "desc": "Crocchette di patate, crocchette di riso, polpette di melanzane e polpette di carne.",
-      "descEN": "Potato croquettes, rice croquettes, aubergine balls and meatballs.",
-      "prices": [],
-      "cat": "contorni",
-      "special": true
+      "desc": "2 polpette di melanzane, 2 polpette di carne e 2 straccetti di pollo.",
+      "descEN": "2 aubergine balls, 2 meatballs and 2 chicken strips.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€6,80"
+        }
+      ],
+      "special": true,
+      "num": 27,
+      "cat": "contorni"
     },
     {
       "num": 42,
@@ -644,65 +614,153 @@
   "drinks": [
     {
       "category": "Birre",
-      "name": "Affligem",
-      "nameEN": "Affligem",
+      "categoryEN": "Beers",
+      "name": "Heineken Original · 25 cl",
+      "nameEN": "Heineken Original · 25 cl",
       "price": "€3,00",
-      "ingredients": "",
-      "categoryEN": "Beers"
+      "ingredients": "Spina"
     },
     {
       "category": "Birre",
-      "name": "Erdinger cl 30",
-      "nameEN": "Erdinger 30 cl",
-      "price": "€3,00",
-      "ingredients": "",
-      "categoryEN": "Beers"
+      "categoryEN": "Beers",
+      "name": "Heineken Original · 50 cl",
+      "nameEN": "Heineken Original · 50 cl",
+      "price": "€5,00",
+      "ingredients": "Spina"
     },
     {
       "category": "Birre",
-      "name": "Erdinger cl 50",
-      "nameEN": "Erdinger 50 cl",
-      "price": "€3,00",
-      "ingredients": "",
-      "categoryEN": "Beers"
+      "categoryEN": "Beers",
+      "name": "Affligem Rouge · 30 cl",
+      "nameEN": "Affligem Rouge · 30 cl",
+      "price": "€5,00",
+      "ingredients": "Spina"
     },
     {
       "category": "Birre",
-      "name": "Bulldog cl 20",
-      "nameEN": "Bulldog 20 cl",
-      "price": "€3,00",
-      "ingredients": "",
-      "categoryEN": "Beers"
+      "categoryEN": "Beers",
+      "name": "Bulldog Strong Lager · 20 cl",
+      "nameEN": "Bulldog Strong Lager · 20 cl",
+      "price": "€3,50",
+      "ingredients": "Spina"
     },
     {
       "category": "Birre",
-      "name": "Bulldog cl 40",
-      "nameEN": "Bulldog 40 cl",
-      "price": "€3,00",
-      "ingredients": "",
-      "categoryEN": "Beers"
+      "categoryEN": "Beers",
+      "name": "Bulldog Strong Lager · 40 cl",
+      "nameEN": "Bulldog Strong Lager · 40 cl",
+      "price": "€6,00",
+      "ingredients": "Spina"
     },
     {
       "category": "Birre",
-      "name": "HNK 25 cl",
-      "nameEN": "HNK 25 cl",
-      "price": "€3,00",
-      "ingredients": "",
-      "categoryEN": "Beers"
+      "categoryEN": "Beers",
+      "name": "Erdinger Weißbier · 30 cl",
+      "nameEN": "Erdinger Weißbier · 30 cl",
+      "price": "€4,00",
+      "ingredients": "Spina"
     },
     {
       "category": "Birre",
-      "name": "HNK 50 cl",
-      "nameEN": "HNK 50 cl",
+      "categoryEN": "Beers",
+      "name": "Erdinger Weißbier · 50 cl",
+      "nameEN": "Erdinger Weißbier · 50 cl",
+      "price": "€6,50",
+      "ingredients": "Spina"
+    },
+    {
+      "category": "Birre",
+      "categoryEN": "Beers",
+      "name": "Stella Artois · 33 cl",
+      "nameEN": "Stella Artois · 33 cl",
       "price": "€3,00",
-      "ingredients": "",
-      "categoryEN": "Beers"
+      "ingredients": "Bottiglia"
+    },
+    {
+      "category": "Birre",
+      "categoryEN": "Beers",
+      "name": "Brewdog Punk IPA · 33 cl",
+      "nameEN": "Brewdog Punk IPA · 33 cl",
+      "price": "€6,00",
+      "ingredients": "Lattina"
+    },
+    {
+      "category": "Birre",
+      "categoryEN": "Beers",
+      "name": "Brewdog Punk IPA Gluten Free · 33 cl",
+      "nameEN": "Brewdog Punk IPA Gluten Free · 33 cl",
+      "price": "€6,50",
+      "ingredients": "Lattina"
+    },
+    {
+      "category": "Birre",
+      "categoryEN": "Beers",
+      "name": "Brewdog Punk IPA Analcolica · 33 cl",
+      "nameEN": "Brewdog Punk IPA Analcolica · 33 cl",
+      "price": "€5,50",
+      "ingredients": "Lattina"
+    },
+    {
+      "category": "Birre",
+      "categoryEN": "Beers",
+      "name": "Bush Caractère · 33 cl",
+      "nameEN": "Bush Caractère · 33 cl",
+      "price": "€6,50",
+      "ingredients": "Bottiglia"
+    },
+    {
+      "category": "Birre",
+      "categoryEN": "Beers",
+      "name": "Bush Triple · 33 cl",
+      "nameEN": "Bush Triple · 33 cl",
+      "price": "€6,50",
+      "ingredients": "Bottiglia"
+    },
+    {
+      "category": "Birre",
+      "categoryEN": "Beers",
+      "name": "Yle Batras · 33 cl",
+      "nameEN": "Yle Batras · 33 cl",
+      "price": "€6,00",
+      "ingredients": "Bottiglia"
+    },
+    {
+      "category": "Birre",
+      "categoryEN": "Beers",
+      "name": "Yle Kelaf · 33 cl",
+      "nameEN": "Yle Kelaf · 33 cl",
+      "price": "€6,00",
+      "ingredients": "Bottiglia"
+    },
+    {
+      "category": "Birre",
+      "categoryEN": "Beers",
+      "name": "Yle Kimas · 33 cl",
+      "nameEN": "Yle Kimas · 33 cl",
+      "price": "€6,50",
+      "ingredients": "Bottiglia"
+    },
+    {
+      "category": "Birre",
+      "categoryEN": "Beers",
+      "name": "Yle Skiu · 33 cl",
+      "nameEN": "Yle Skiu · 33 cl",
+      "price": "€6,50",
+      "ingredients": "Bottiglia"
+    },
+    {
+      "category": "Birre",
+      "categoryEN": "Beers",
+      "name": "Yle Likos · 33 cl",
+      "nameEN": "Yle Likos · 33 cl",
+      "price": "€6,50",
+      "ingredients": "Bottiglia"
     },
     {
       "category": "Bibite analcoliche",
       "name": "Coca Cola",
       "nameEN": "Coca-Cola",
-      "price": "",
+      "price": "€3,00",
       "ingredients": "",
       "categoryEN": "Soft Drinks"
     },
@@ -710,7 +768,7 @@
       "category": "Bibite analcoliche",
       "name": "Coca Cola Zero",
       "nameEN": "Coca-Cola Zero",
-      "price": "",
+      "price": "€3,00",
       "ingredients": "",
       "categoryEN": "Soft Drinks"
     },
@@ -718,7 +776,7 @@
       "category": "Bibite analcoliche",
       "name": "Coca Cola Zero Zero",
       "nameEN": "Coca-Cola Zero Zero",
-      "price": "",
+      "price": "€3,00",
       "ingredients": "",
       "categoryEN": "Soft Drinks"
     },
