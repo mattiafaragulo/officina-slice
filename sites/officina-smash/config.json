@@ -354,7 +354,13 @@
       "nameEN": "Classic Hot Dog",
       "desc": "Wurstel e senape.",
       "descEN": "Frankfurter and mustard.",
-      "prices": [],
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€4,00"
+        }
+      ],
       "cat": "hotdog"
     },
     {
@@ -441,7 +447,7 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€3,80"
+          "value": "€3,90"
         }
       ],
       "num": 22,
@@ -456,7 +462,7 @@
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€3,80"
+          "value": "€3,90"
         }
       ],
       "num": 23,
@@ -510,8 +516,8 @@
     {
       "name": "Box Officina",
       "nameEN": "Officina Box",
-      "desc": "2 polpette di melanzane, 2 polpette di carne e 2 straccetti di pollo.",
-      "descEN": "2 aubergine balls, 2 meatballs and 2 chicken strips.",
+      "desc": "Polpette di carne, polpette di melanzane, anelli di cipolla e stick di mozzarella.",
+      "descEN": "Meatballs, aubergine balls, onion rings and mozzarella sticks.",
       "prices": [
         {
           "label": "Prezzo",
@@ -604,8 +610,8 @@
       "num": 47,
       "name": "Box Officina",
       "nameEN": "Officina Box",
-      "desc": "Crocchette di patate, crocchette di riso, polpette di melanzane e polpette di carne.",
-      "descEN": "Potato croquettes, rice croquettes, aubergine balls and meatballs.",
+      "desc": "Polpette di carne, polpette di melanzane, anelli di cipolla e stick di mozzarella.",
+      "descEN": "Meatballs, aubergine balls, onion rings and mozzarella sticks.",
       "prices": [],
       "cat": "taglieri",
       "special": true
