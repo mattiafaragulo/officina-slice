@@ -246,8 +246,8 @@
       "num": 9,
       "name": "Lo Stretto Smash",
       "nameEN": "The Strait Smash",
-      "desc": "Braciole messinesi, sottiletta, lattuga e maionese.",
-      "descEN": "Messina-style braciole, sottiletta cheese, lettuce and mayonnaise.",
+      "desc": "Braciole messinesi, lattuga e maionese.",
+      "descEN": "Messina-style braciole, lettuce and mayonnaise.",
       "prices": [
         {
           "label": "Prezzo",
