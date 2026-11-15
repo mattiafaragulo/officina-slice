@@ -169,8 +169,8 @@
       "num": 4,
       "name": "La Fuoriserie",
       "nameEN": "The Fuoriserie",
-      "desc": "Smash burger, pomodoro secco, caciocavallo, uovo e salsa Officina.",
-      "descEN": "Smashed beef burger, sun-dried tomato, caciocavallo cheese, egg and Officina sauce.",
+      "desc": "Smash burger, pomodoro secco, Caciocavallo DOP, uovo e salsa Officina.",
+      "descEN": "Smashed beef burger, sun-dried tomato, Caciocavallo DOP, egg and Officina sauce.",
       "prices": [
         {
           "label": "Prezzo",
@@ -200,8 +200,8 @@
       "num": 6,
       "name": "Silano Turbo",
       "nameEN": "Silano Turbo",
-      "desc": "Salsiccia silana smashata, caciocavallo, patate silane, cipolla caramellata e salsa piccante.",
-      "descEN": "Smashed Sila sausage, caciocavallo cheese, Sila potatoes, caramelized onion and spicy sauce.",
+      "desc": "Salsiccia silana smashata, Caciocavallo DOP, patate silane, cipolla caramellata e salsa piccante.",
+      "descEN": "Smashed Sila sausage, Caciocavallo DOP, Sila potatoes, caramelized onion and spicy sauce.",
       "prices": [
         {
           "label": "Prezzo",
@@ -262,8 +262,8 @@
       "num": 10,
       "name": "Braciola a Tutto Gas",
       "nameEN": "Full Throttle Braciola",
-      "desc": "Braciole messinesi, caciocavallo, cipolla caramellata e maionese al limone.",
-      "descEN": "Messina-style braciole, caciocavallo cheese, caramelized onion and lemon mayo.",
+      "desc": "Braciole messinesi, Caciocavallo DOP, cipolla caramellata e maionese al limone.",
+      "descEN": "Messina-style braciole, Caciocavallo DOP, caramelized onion and lemon mayo.",
       "prices": [
         {
           "label": "Prezzo",
@@ -426,8 +426,8 @@
     {
       "name": "Patate",
       "nameEN": "Potatoes",
-      "desc": "3 pezzi.",
-      "descEN": "3 pieces.",
+      "desc": "",
+      "descEN": "",
       "prices": [
         {
           "label": "Prezzo",
@@ -533,8 +533,8 @@
       "num": 42,
       "name": "Smash al Piatto",
       "nameEN": "Smash on a Plate",
-      "desc": "Doppio smash burger, caciocavallo silano, patate silane, pomodoro a fette e salsa a scelta.",
-      "descEN": "Double smash burger, Sila caciocavallo cheese, Sila potatoes, sliced tomato and sauce of your choice.",
+      "desc": "Doppio smash burger, Caciocavallo DOP, patate silane, pomodoro a fette e salsa a scelta.",
+      "descEN": "Double smash burger, Caciocavallo DOP, Sila potatoes, sliced tomato and sauce of your choice.",
       "prices": [
         {
           "label": "Prezzo",
@@ -549,8 +549,8 @@
       "num": 43,
       "name": "Braciola al Piatto",
       "nameEN": "Braciola on a Plate",
-      "desc": "Braciole messinesi, caciocavallo silano, patate silane, lattuga iceberg e salsa a scelta.",
-      "descEN": "Messina-style braciole, Sila caciocavallo cheese, Sila potatoes, iceberg lettuce and sauce of your choice.",
+      "desc": "Braciole messinesi, Caciocavallo DOP, patate silane, lattuga iceberg e salsa a scelta.",
+      "descEN": "Messina-style braciole, Caciocavallo DOP, Sila potatoes, iceberg lettuce and sauce of your choice.",
       "prices": [
         {
           "label": "Prezzo",
@@ -564,8 +564,8 @@
       "num": 44,
       "name": "Silano al Piatto",
       "nameEN": "Silano on a Plate",
-      "desc": "Salsiccia silana aperta e smashata sulla piastra, caciocavallo silano, patate silane, melanzane grigliate e salsa a scelta.",
-      "descEN": "Sila sausage opened and smashed on the griddle, Sila caciocavallo cheese, Sila potatoes, grilled aubergine and sauce of your choice.",
+      "desc": "Salsiccia silana aperta e smashata sulla piastra, Caciocavallo DOP, patate silane, melanzane grigliate e salsa a scelta.",
+      "descEN": "Sila sausage opened and smashed on the griddle, Caciocavallo DOP, Sila potatoes, grilled aubergine and sauce of your choice.",
       "prices": [
         {
           "label": "Prezzo",
@@ -579,8 +579,8 @@
       "num": 45,
       "name": "Chicken al Piatto",
       "nameEN": "Chicken on a Plate",
-      "desc": "Petto di pollo grigliato, caciocavallo silano, patate silane, insalata iceberg e salsa a scelta.",
-      "descEN": "Grilled chicken breast, Sila caciocavallo cheese, Sila potatoes, iceberg lettuce and sauce of your choice.",
+      "desc": "Petto di pollo grigliato, Caciocavallo DOP, patate silane, insalata iceberg e salsa a scelta.",
+      "descEN": "Grilled chicken breast, Caciocavallo DOP, Sila potatoes, iceberg lettuce and sauce of your choice.",
       "prices": [
         {
           "label": "Prezzo",
