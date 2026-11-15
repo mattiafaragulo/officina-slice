@@ -139,8 +139,8 @@
       "num": 2,
       "name": "L’American",
       "nameEN": "The American",
-      "desc": "Doppio smash burger, doppio cheddar, bacon croccante, cipolla cruda, cetriolini e salsa Officina.",
-      "descEN": "Double smashed beef burger, double cheddar, crispy bacon, raw onion, pickles and Officina sauce.",
+      "desc": "Doppio smash burger, doppio cheddar, bacon croccante, cipolla, cetriolini e salsa Officina.",
+      "descEN": "Double smashed beef burger, double cheddar, crispy bacon, onion, pickles and Officina sauce.",
       "prices": [
         {
           "label": "Prezzo",
