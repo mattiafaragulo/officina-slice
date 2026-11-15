@@ -246,7 +246,7 @@
       "num": 9,
       "name": "Lo Stretto Smash",
       "nameEN": "The Strait Smash",
-      "desc": "Braciole messinesi, lattuga e maionese.",
+      "desc": "Braciole Messinesi (Involtini messinesi), lattuga e maionese.",
       "descEN": "Messina-style braciole, lettuce and mayonnaise.",
       "prices": [
         {
@@ -262,7 +262,7 @@
       "num": 10,
       "name": "Braciola a Tutto Gas",
       "nameEN": "Full Throttle Braciola",
-      "desc": "Braciole messinesi, Caciocavallo DOP, cipolla caramellata e maionese al limone.",
+      "desc": "Braciole Messinesi (Involtini messinesi), Caciocavallo DOP, cipolla caramellata e maionese al limone.",
       "descEN": "Messina-style braciole, Caciocavallo DOP, caramelized onion and lemon mayo.",
       "prices": [
         {
@@ -277,7 +277,7 @@
       "num": 11,
       "name": "Il Peloritano",
       "nameEN": "The Peloritano",
-      "desc": "Braciole messinesi, pomodoro, insalata, patate silane e salsa piccante.",
+      "desc": "Braciole Messinesi (Involtini messinesi), pomodoro, insalata, patate silane e salsa piccante.",
       "descEN": "Messina-style braciole, tomato, salad, Sila potatoes and spicy sauce.",
       "prices": [
         {
@@ -549,7 +549,7 @@
       "num": 43,
       "name": "Braciola al Piatto",
       "nameEN": "Braciola on a Plate",
-      "desc": "Braciole messinesi, Caciocavallo DOP, patate silane, lattuga iceberg e salsa a scelta.",
+      "desc": "Braciole Messinesi (Involtini messinesi), Caciocavallo DOP, patate silane, lattuga iceberg e salsa a scelta.",
       "descEN": "Messina-style braciole, Caciocavallo DOP, Sila potatoes, iceberg lettuce and sauce of your choice.",
       "prices": [
         {
