@@ -397,8 +397,8 @@
       "num": 19,
       "name": "Green Sila",
       "nameEN": "Green Sila",
-      "desc": "Hamburger vegetariano (tipologia da definire).",
-      "descEN": "Vegetarian burger (type to be confirmed).",
+      "desc": "Hamburger vegetariano, cheddar, pomodoro, lattuga.",
+      "descEN": "Vegetarian burger, cheddar, tomato, lettuce.",
       "prices": [
         {
           "label": "Prezzo",
@@ -424,25 +424,10 @@
       "cat": "veggie"
     },
     {
-      "name": "Patate",
-      "nameEN": "Potatoes",
-      "desc": "",
-      "descEN": "",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "€3,50"
-        }
-      ],
-      "num": 21,
-      "cat": "contorni"
-    },
-    {
-      "name": "Straccetti di pollo",
-      "nameEN": "Chicken Strips",
-      "desc": "Straccetti di pollo.",
-      "descEN": "Chicken strips.",
+      "name": "Mozzarella Stick",
+      "nameEN": "Mozzarella Sticks",
+      "desc": "4 pezzi.",
+      "descEN": "4 pieces.",
       "prices": [
         {
           "label": "Prezzo",
@@ -450,7 +435,67 @@
           "value": "€3,90"
         }
       ],
-      "num": 22,
+      "cat": "contorni",
+      "num": 21
+    },
+    {
+      "name": "Anelli di cipolla",
+      "nameEN": "Onion Rings",
+      "desc": "6 pezzi.",
+      "descEN": "6 pieces.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€4,90"
+        }
+      ],
+      "cat": "contorni",
+      "num": 22
+    },
+    {
+      "name": "Nuggets",
+      "nameEN": "Nuggets",
+      "desc": "6 pezzi.",
+      "descEN": "6 pieces.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€4,90"
+        }
+      ],
+      "cat": "contorni",
+      "num": 23
+    },
+    {
+      "name": "Stick",
+      "nameEN": "Fries",
+      "desc": "Patate stick.",
+      "descEN": "French fries.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€3,90"
+        }
+      ],
+      "num": 24,
+      "cat": "contorni"
+    },
+    {
+      "name": "Filetti di pollo fritti homemade",
+      "nameEN": "Homemade Fried Chicken Fillets",
+      "desc": "3 pezzi.",
+      "descEN": "3 pieces.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€4,90"
+        }
+      ],
+      "num": 25,
       "cat": "contorni"
     },
     {
@@ -465,14 +510,14 @@
           "value": "€3,90"
         }
       ],
-      "num": 23,
+      "num": 26,
       "cat": "contorni"
     },
     {
       "name": "Polpette di carne",
       "nameEN": "Meatballs",
-      "desc": "3 pezzi.",
-      "descEN": "3 pieces.",
+      "desc": "4 pezzi.",
+      "descEN": "4 pieces.",
       "prices": [
         {
           "label": "Prezzo",
@@ -480,7 +525,7 @@
           "value": "€3,90"
         }
       ],
-      "num": 24,
+      "num": 27,
       "cat": "contorni"
     },
     {
@@ -495,7 +540,7 @@
           "value": "€3,90"
         }
       ],
-      "num": 25,
+      "num": 28,
       "cat": "contorni"
     },
     {
@@ -510,27 +555,27 @@
           "value": "€4,80"
         }
       ],
-      "num": 26,
+      "num": 29,
       "cat": "contorni"
     },
     {
       "name": "Box Officina",
       "nameEN": "Officina Box",
-      "desc": "Polpette di carne, polpette di melanzane, anelli di cipolla e stick di mozzarella.",
-      "descEN": "Meatballs, aubergine balls, onion rings and mozzarella sticks.",
+      "desc": "Misto fritti.",
+      "descEN": "Mixed fried bites.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€6,80"
+          "value": "€6,90"
         }
       ],
       "special": true,
-      "num": 27,
+      "num": 30,
       "cat": "contorni"
     },
     {
-      "num": 42,
+      "num": 31,
       "name": "Smash al Piatto",
       "nameEN": "Smash on a Plate",
       "desc": "Doppio smash burger, Caciocavallo DOP, patate silane, pomodoro a fette e salsa a scelta.",
@@ -546,7 +591,7 @@
       "special": true
     },
     {
-      "num": 43,
+      "num": 32,
       "name": "Braciola al Piatto",
       "nameEN": "Braciola on a Plate",
       "desc": "Braciole Messinesi (Involtini messinesi), Caciocavallo DOP, patate silane, lattuga iceberg e salsa a scelta.",
@@ -561,7 +606,7 @@
       "cat": "fuoribun"
     },
     {
-      "num": 44,
+      "num": 33,
       "name": "Silano al Piatto",
       "nameEN": "Silano on a Plate",
       "desc": "Salsiccia silana aperta e smashata sulla piastra, Caciocavallo DOP, patate silane, melanzane grigliate e salsa a scelta.",
@@ -576,7 +621,7 @@
       "cat": "fuoribun"
     },
     {
-      "num": 45,
+      "num": 34,
       "name": "Chicken al Piatto",
       "nameEN": "Chicken on a Plate",
       "desc": "Petto di pollo grigliato, Caciocavallo DOP, patate silane, insalata iceberg e salsa a scelta.",
@@ -591,7 +636,7 @@
       "cat": "fuoribun"
     },
     {
-      "num": 46,
+      "num": 35,
       "name": "Tagliere Officina",
       "nameEN": "Officina Board",
       "desc": "Salumi e formaggi silani.",
@@ -607,12 +652,18 @@
       "special": true
     },
     {
-      "num": 47,
+      "num": 36,
       "name": "Box Officina",
       "nameEN": "Officina Box",
-      "desc": "Polpette di carne, polpette di melanzane, anelli di cipolla e stick di mozzarella.",
-      "descEN": "Meatballs, aubergine balls, onion rings and mozzarella sticks.",
-      "prices": [],
+      "desc": "Misto fritti.",
+      "descEN": "Mixed fried bites.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€6,90"
+        }
+      ],
       "cat": "taglieri",
       "special": true
     }
