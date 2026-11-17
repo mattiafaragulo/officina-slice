@@ -424,10 +424,25 @@
       "cat": "veggie"
     },
     {
-      "name": "Mozzarella Stick",
-      "nameEN": "Mozzarella Sticks",
+      "name": "Candele - Mozza Stick",
+      "nameEN": "Candele - Mozza Sticks",
       "desc": "4 pezzi.",
       "descEN": "4 pieces.",
+      "prices": [
+        {
+          "label": "Prezzo",
+          "labelEN": "Price",
+          "value": "€4,90"
+        }
+      ],
+      "cat": "contorni",
+      "num": 21
+    },
+    {
+      "name": "Bulloni - Anelli di Cipolla",
+      "nameEN": "Bulloni - Onion Rings",
+      "desc": "6 pezzi.",
+      "descEN": "6 pieces.",
       "prices": [
         {
           "label": "Prezzo",
@@ -436,33 +451,18 @@
         }
       ],
       "cat": "contorni",
-      "num": 21
-    },
-    {
-      "name": "Anelli di cipolla",
-      "nameEN": "Onion Rings",
-      "desc": "6 pezzi.",
-      "descEN": "6 pieces.",
-      "prices": [
-        {
-          "label": "Prezzo",
-          "labelEN": "Price",
-          "value": "€4,90"
-        }
-      ],
-      "cat": "contorni",
       "num": 22
     },
     {
-      "name": "Nuggets",
-      "nameEN": "Nuggets",
+      "name": "Chicken Nuggets",
+      "nameEN": "Chicken Nuggets",
       "desc": "6 pezzi.",
       "descEN": "6 pieces.",
       "prices": [
         {
           "label": "Prezzo",
           "labelEN": "Price",
-          "value": "€4,90"
+          "value": "€5,90"
         }
       ],
       "cat": "contorni",
